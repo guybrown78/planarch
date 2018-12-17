@@ -1,0 +1,57 @@
+
+@import './variables.scss';
+@import './page-header.scss';
+@import './page-details.scss';
+@import './cards.scss';
+@import './footer.scss';
+
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: $grey-light;
+	font-size: 10px;
+	color: $grey-darkest;
+}
+.text-center {
+	text-align: center;
+}
+.page-header{
+	padding: 0 $padding-large;
+}
+.page-items{
+	padding: 0 $padding-large;
+	clear: both;
+	font-size: 1.3em;
+	margin: 0 auto;
+}
+@media #{$screen-medium} {
+
+}
+@media #{$screen-large} {
+	.page-header,
+	.page-hero,
+	.page-items{
+		padding: 0 4em;
+	}
+}
+@media #{$screen-xlarge} {
+	.page-header,
+	.page-hero,
+	.page-items{
+		padding: 0 $padding-large;
+	}
+	.navbar, .page-hero{
+			width: 950px;
+			margin: 0 auto;
+	}
+	.page-items{
+		padding: 0 $padding-large;
+		width: 950px;
+	}
+}

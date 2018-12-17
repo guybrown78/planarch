@@ -1,0 +1,152 @@
+
+.navbar {
+    font-size: 1.9em;
+    padding-bottom: $padding-small;
+    z-index: 3;
+
+    &::after {
+        content: "";
+        background-image: linear-gradient(250deg, $blue-light 50%, $orange-light 100%);
+        opacity: 0.35;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        height: 500px;
+        transition: opacity .25s ease-in-out;
+    }
+}
+
+
+
+
+
+.nav {
+    list-style-type: none;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: display 0s, visibility 0s, opacity .25s ease-in-out;
+}
+
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.nav li {
+    //text-align: center;
+    margin: 15px; // auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    img {
+        width: 120px;
+        display: none;
+    }
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.navbar-toggle .fa-times {
+    display: none;
+}
+
+.navbar-active .navbar-toggle .fa-times {
+    display: block;
+}
+
+.navbar-active .navbar-toggle .fa-bars {
+    display: none;
+}
+
+.nav-active {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60%;
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    // border-left: 1px solid white;
+}
+
+@media #{$screen-medium} {
+    .nav-active {
+        margin-left: 75%;
+    }
+}
+
+
+@media #{$screen-large} {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 160px;
+        align-items: center;
+    }
+
+    .navbar-active::after {
+        opacity: 0.35;
+    }
+
+    .nav {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        // margin-right: $padding-medium;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .nav-active {
+        margin-left: 0;
+    }
+
+    .nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: $padding-large;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .logo img {
+        display: block;
+    }
+
+    .logo .logo-text {
+        display: none;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+}

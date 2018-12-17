@@ -1,0 +1,175 @@
+$footer-height-small: 100px;
+$footer-height-medium: 120px;
+$footer-height-large: 150px;
+
+.page-footer {
+    background-color: $plan-arch-blue;
+    padding-bottom: 3px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    color: white;
+
+    .footer-top {
+        background-color: #B4CBE8;
+        width: 100%;
+    }
+
+    .footer-main {
+        background-color: $plan-arch-blue;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        height: $footer-height-small;
+
+        .content {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .copyright {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+    }
+
+    .footer-logo {
+        display: inline-block;
+        img {
+            display: block;
+            height: $footer-height-small;
+        }
+    }
+
+    .social-media {
+        font-size: 2em;
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            li {
+                margin: 0 $padding-small;
+
+                a {
+                    color: $white;
+
+                    &:hover,
+                    &:active {
+                        color: $plan-arch-blue;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-details {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .postal-address {
+            padding: 0 $padding-small;
+            font-size: .9em;
+        }
+
+        .contact {
+            ul {
+                list-style: none;
+
+                li {
+                    margin: $padding-small;
+
+                    .contact-link {
+                        font-size: 1.2em;
+                        color: $white;
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        i{
+                            margin-right: $padding-small;
+                        }
+                        &:hover,
+                        &:active {
+                            color: $blue-darker;
+                        }
+
+                        span {
+                            margin-left: $padding-small;
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media #{$screen-greater-than-small} {
+            .postal-address {
+                font-size: 1em;
+            }
+            .contact {
+                ul {
+                    li {
+                        .contact-link {
+                            span {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+        @media #{$screen-medium} {
+            .footer-main {
+                height: $footer-height-medium;
+            }
+
+            .footer-logo {
+                img {
+                    height: $footer-height-medium;
+                }
+            }
+        }
+
+        @media #{$screen-large} {
+            .footer-main {
+                height: $footer-height-large;
+            }
+
+            .footer-logo {
+                img {
+                    height: $footer-height-large;
+                }
+            }
+        }
+
+        @media #{$screen-xlarge} {
+            .footer-main {
+                height: $footer-height-large;
+            }
+
+            .footer-logo {
+                img {
+                    height: $footer-height-large;
+                }
+            }
+        }
+    }

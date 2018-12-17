@@ -1,0 +1,27 @@
+
+
+.page-header {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+
+.page-header::after {
+    content: "";
+    background: url('../img/bg_1.JPG') no-repeat center center fixed;
+    background-color: $blue-lighter;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    opacity: 0.75;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 500px;
+    position: absolute;
+    z-index: -1;
+}
+
+@import './navigation.scss';
+@import './page-hero.scss';
