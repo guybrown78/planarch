@@ -1,10 +1,17 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const path = require('path');
+const webpack = require('webpack');
+
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
+const pug = {
+	test: /\.pug$/,
+	use: ['html-loader', 'pug-html-loader']
+};
 
 module.exports = {
 	module: {
-		rules: [
-			{
+		rules: [{
 				test: /\.js$/,
 				exclude: /node_modules/,
 				use: {
@@ -13,12 +20,16 @@ module.exports = {
 			},
 			{
 				test: /\.html$/,
-				use: [{ loader: "html-loader", options: { minimize: true } }]
+				use: [{
+					loader: "html-loader",
+					options: {
+						minimize: true
+					}
+				}]
 			},
 			{
 				test: /\.(png|jpe?g)/i,
-				use: [
-					{
+				use: [{
 						loader: "url-loader",
 						options: {
 							name: "./img/[name].[ext]",
@@ -38,13 +49,23 @@ module.exports = {
 					"postcss-loader",
 					"sass-loader"
 				]
-			}
+			},
+			pug
 		]
 	},
 	plugins: [
-		new HtmlWebPackPlugin({
+		new HtmlWebpackPlugin({
 			template: "src/index.html",
-			filename: "./index.html"
+			filename: "./original-index.html"
+		}),
+		new HtmlWebpackPlugin({
+			template: 'src/index.pug',
+			filename: 'index.html',
+		}),
+		new HtmlWebpackPlugin({
+			template: 'src/about.pug',
+			filename: 'about.html',
+			//inject: false
 		}),
 		new MiniCssExtractPlugin({
 			filename: "[name].css",
