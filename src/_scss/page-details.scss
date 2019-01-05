@@ -31,19 +31,20 @@
 	display: flex;
 	flex-direction: row;
 	align-items: stretch;
+	margin-bottom: 0.2em;
 	&__icon{
 		padding: 0.2em;
 		background-image: linear-gradient(250deg, $blue-lighter 50%, $blue-light 100%);
-		margin-bottom: 0.2em;
 		color: $grey-lightest;
 		font-size: 5em;
 		line-height: 0em;
 		display: flex;
-		//justify-content: center;
 		align-items: center;
 	}
 	&__text{
 		flex: 1 1 auto;
+		display: flex;
+		align-items: center;
 	}
 	&.left{
 		.page-details-content-block__icon{

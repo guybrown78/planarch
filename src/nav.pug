@@ -3,25 +3,20 @@
     <i class="fas fa-bars"></i>
     <i class="fas fa-times"></i>
   </span>
-  <a href="#" class="logo">
+  <a href="/index.html" class="logo">
     <span class="logo-text">PlanArch Design</span>
     <img src="./img/planarch-design-logo.png" title="PlanArch Design" alt="PlanArch Design Logo" />
   </a>
   <ul class="nav" id="js-nav">
-    <li>
-      <a href="#" class="nav-links">Home</a>
-    </li>
-    <li>
-      <a href="#" class="nav-links">Projects</a>
-    </li>
-    <li>
-      <a href="#" class="nav-links">Guide</a>
-    </li>
-    <li>
-      <a href="#" class="nav-links">About Us</a>
-    </li>
-    <li>
-      <a href="#" class="nav-links">Contact Us</a>
-    </li>
+    li.nav__item: a.nav__link(href="/index.html", class=(currentPath.startsWith('index') ? 'nav__link--active' : ''))
+      span Home
+    li.nav__item: a.nav__link(href="#", class=(currentPath.startsWith('project') ? 'nav__link--active' : ''))
+      span Projects
+    li.nav__item: a.nav__link(href="#", class=(currentPath.startsWith('guide') ? 'nav__link--active' : ''))
+      span Guide
+    li.nav__item: a.nav__link(href="/about.html", class=(currentPath.startsWith('about') ? 'nav__link--active' : ''))
+      span About Us
+    li.nav__item: a.nav__link(href="#", class=(currentPath.startsWith('contact') ? 'nav__link--active' : ''))
+      span Contact
   </ul>
 </nav>

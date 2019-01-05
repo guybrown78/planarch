@@ -31,7 +31,7 @@
     transition: display 0s, visibility 0s, opacity .25s ease-in-out;
 }
 
-.nav-links,
+.nav__link,
 .logo {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
@@ -125,10 +125,12 @@
         margin: 0;
     }
 
-    .nav-links {
+    .nav__link {
         margin-left: $padding-large;
     }
-
+    .nav__link--active {
+        color: $orange-base;
+    }
     .logo {
         margin-top: 0;
     }
@@ -146,7 +148,10 @@
     }
 
     .logo:hover,
-    .nav-links:hover {
+    .nav__link:hover {
         color: rgba(255, 255, 255, 1);
+    }
+    .nav__link--active:hover {
+        color: $orange-base;
     }
 }
