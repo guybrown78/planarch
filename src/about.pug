@@ -3,8 +3,8 @@ extends layout
 
 
 block content
-	<section class="page-header" id="js-page-header">
 	- var currentPath = 'about';
+	section.page-header#js-page-header(data-current-path=`${currentPath}`)
 		include nav
 		<div class="page-hero" id="js-pagehero">
 			<div class="slider-text-inner text-center">

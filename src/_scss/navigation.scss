@@ -36,7 +36,9 @@
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
 }
-
+.nav__link--active {
+    color: $orange-base;
+}
 .nav li {
     //text-align: center;
     margin: 15px; // auto;
@@ -128,9 +130,7 @@
     .nav__link {
         margin-left: $padding-large;
     }
-    .nav__link--active {
-        color: $orange-base;
-    }
+    
     .logo {
         margin-top: 0;
     }

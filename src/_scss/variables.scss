@@ -26,11 +26,27 @@ $padding-small:1em;
 $padding-medium:1.5em;
 $padding-large:2em;
 
+/*scrren width variables*/
+$screen-small-max-width: 576;
+$screen-medium-min-width: $screen-small-max-width + 1;
+$screen-medium-max-width: 768;
+$screen-large-min-width: $screen-medium-max-width + 1;
+$screen-large-max-width: 999;
+$screen-xlarge-min-width: $screen-large-max-width + 1;
 /*media query threshold variables*/
-$screen-small:'only screen and (max-width: 576px)';
-$screen-medium:'only screen and (min-width: 577px) and (max-width: 768px)';
-$screen-large:'only screen and (min-width: 769px)';
-$screen-xlarge:'only screen and (min-width: 1000px)';
-$screen-greater-than-small:'only screen and (min-width: 577px)';
-$screen-greater-than-medium:'only screen and (min-width: 769px)';
-$screen-less-than-large:'only screen and (max-width: 768px)';
+$screen-small:'only screen and (max-width: ' + $screen-small-max-width + 'px)';
+$screen-medium:'only screen and (min-width: ' + $screen-medium-min-width + 'px) and (max-width: ' + $screen-medium-max-width + 'px)';
+$screen-large:'only screen and (min-width: ' + $screen-large-min-width + 'px)';
+$screen-xlarge:'only screen and (min-width: ' + $screen-xlarge-min-width + 'px)';
+$screen-greater-than-small:'only screen and (min-width: ' + $screen-medium-min-width + 'px)';
+$screen-greater-than-medium:'only screen and (min-width: ' + $screen-large-min-width + 'px)';
+$screen-less-than-large:'only screen and (max-width: ' + $screen-medium-max-width + 'px)';
+
+:export {
+  screenSmallMaxWidth: $screen-small-max-width;
+  screenMediumMinWidth: $screen-medium-min-width;
+  screenMediumMaxWidth: $screen-medium-max-width;
+  screenLargeMinWidth: $screen-large-min-width;
+  screenLargeMaxWidth: $screen-large-max-width;
+  screenXLargeMinWidth: $screen-xlarge-min-width;
+}

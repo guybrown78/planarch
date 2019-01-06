@@ -1,15 +1,6 @@
-
-
-.page-header {
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    z-index: 0;
-}
-
-.page-header::after {
+@mixin add-header-bg($bgImgURL:'../img/bg_1.JPG') {
     content: "";
-    background: url('../img/bg_1.JPG') no-repeat center center fixed;
+    background: url($bgImgURL) no-repeat center center fixed;
     background-color: $blue-lighter;
     background-blend-mode: soft-light;
     background-size: cover;
@@ -21,6 +12,25 @@
     height: 500px;
     position: absolute;
     z-index: -1;
+}
+
+.page-header {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+
+// set default background image
+.page-header::after {
+    @include add-header-bg;
+}
+// set set page specific background images based on the current path embedded into the .page-header as a data attribute
+.page-header[data-current-path="projects"]::after{
+    @include add-header-bg('../img/bg_2.JPG');
+}
+.page-header[data-current-path="about"]::after{
+    @include add-header-bg('../img/bg_3.JPG');
 }
 
 @import './navigation.scss';

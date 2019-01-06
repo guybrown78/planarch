@@ -4,7 +4,7 @@ $footer-height-large: 150px;
 
 .page-footer {
     background-color: $plan-arch-blue;
-    padding-bottom: 3px;
+    padding-bottom: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -15,9 +15,24 @@ $footer-height-large: 150px;
     margin-top: $padding-large;
     .footer-top {
         background-color: #B4CBE8;
+        border-bottom: solid 1px $white;
         width: 100%;
     }
-
+    .footer-bottom {
+        background-color: $plan-arch-blue;
+        // padding: $padding-small 0;
+        height:50px;
+        width: 100%;
+        border-top: solid 1px $white;
+        display: flex;
+        align-items: center;
+        .copyright {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+    }
     .footer-main {
         background-color: $plan-arch-blue;
         flex: 1 1 auto;
@@ -34,13 +49,6 @@ $footer-height-large: 150px;
             align-items: center;
             justify-content: center;
             height: 100%;
-        }
-
-        .copyright {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
         }
 
     }
@@ -118,7 +126,7 @@ $footer-height-large: 150px;
                 }
             }
         }
-
+        
         @media #{$screen-greater-than-small} {
             .postal-address {
                 font-size: 1em;

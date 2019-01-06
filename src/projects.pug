@@ -1,0 +1,29 @@
+//- projects.pug
+extends layout
+
+block content
+	- var currentPath = 'projects';
+	section.page-header#js-page-header(data-current-path=`${currentPath}`)
+		include nav
+		div.page-hero#js-pagehero
+			div(class="slider-text-inner text-center")
+				h1 Our Projects
+				h2 Completed Designs by PlanArch
+
+	section.page-items
+		div.page-details
+			ul.project-category
+				li.project-category__card 
+					div.title Commercial
+				li.project-category__card
+					div.title Conversions
+				li.project-category__card
+					div.title Future Projects
+				li.project-category__card
+					div.title Residential Development
+				li.project-category__card
+					div.title Bespoke Dwellings
+				li.project-category__card
+					div.title Extensions
+				li.project-category__card
+					div.title Community &amp; Education
