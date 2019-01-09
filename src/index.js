@@ -1,6 +1,6 @@
 import style from "./_scss/main.scss";
 import navigation from './js/navigation';
-
+import projectsCategory from './js/projectsCategory';
 
 function init() {
 	// initialise js
@@ -18,7 +18,10 @@ function init() {
 
 	// get the scrollToTopButton
 	const scrollToTopButton = document.getElementById("js-scroll-up");
-	
+	// read the curent path
+	const pageHeaderEL = document.getElementById("js-page-header");
+	const currentPath = pageHeaderEL.dataset.currentpath;
+	//
 	// When the user scrolls down 20px from the top of the document, show the button
 	window.onscroll = function(event) {
 		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -31,7 +34,14 @@ function init() {
 	scrollToTopButton.addEventListener("click", function(event) {
 		document.body.scrollTop = 0; // For Safari
   	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  });
+	});
+	// 
+	// actions dependant on currentPath
+	let currentPageScript = null;
+	if(currentPath === "projects-category"){
+		// add projects-category scripts
+		currentPageScript = new projectsCategory();
+	}
 }
 
 init();
