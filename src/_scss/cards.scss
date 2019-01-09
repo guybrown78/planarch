@@ -50,3 +50,41 @@
         width: 25%;
     }
 }
+
+.project-category{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	&__card{
+		background-color: $white;
+        flex-grow: 1;
+        width: 45%;
+        margin: $padding-small;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+		.project-cover-img{
+            display: block;
+            height: 180px;
+            width: 100%;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+		}
+		.title{
+			padding: $padding-small;
+        }
+        @media #{$screen-medium} {
+            width: 45%;
+    
+        }
+    
+        @media #{$screen-greater-than-medium} {
+            width: 25%;
+        }
+	}
+}

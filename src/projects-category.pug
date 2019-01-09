@@ -1,0 +1,15 @@
+//- projects-category.pug
+extends layout
+
+block content
+	- var currentPath = 'projects-category';
+	section.page-header#js-page-header(data-current-path=`${currentPath}`)
+		include nav
+		div.page-hero#js-pagehero
+			div(class="slider-text-inner text-center")
+				h1 CategoryType Projects
+				h2 Completed &amp; Conceptual Designs by PlanArch
+
+	section.page-items
+		div.page-details
+			div.project-category-cards-app hello
