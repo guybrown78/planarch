@@ -3,7 +3,7 @@ extends layout
 
 block content
 	- var currentPath = 'projects';
-	section.page-header#js-page-header(data-current-path=`${currentPath}`)
+	section.page-header#js-page-header(data-currentpath=`${currentPath}`)
 		include nav
 		div.page-hero#js-pagehero
 			div(class="slider-text-inner text-center")
@@ -19,27 +19,32 @@ block content
 						div.title 
 							h3 Commercial
 				li.project-category__card
-					div.project-cover-img(style="background-image: url(./img/bg_1.JPG);")
-					div.title 
-						h3 Conversions
+					a(href="./projects-category.html?c=conversions")
+						div.project-cover-img(style="background-image: url(./img/bg_1.JPG);")
+						div.title 
+							h3 Conversions
 				li.project-category__card
-					div.project-cover-img(style="background-image: url(./img/bg_2.JPG);")
-					div.title 
-						h3 Future Projects
+					a(href="./projects-category.html?c=future")
+						div.project-cover-img(style="background-image: url(./img/bg_2.JPG);")
+						div.title 
+							h3 Future Projects
 				li.project-category__card
-					a(href="")
+					a(href="./projects-category.html?c=residential-development")
 						div.project-cover-img(style="background-image: url(./img/bg_3.JPG);")
 						div.title 
 							h3 Residential Development
 				li.project-category__card
-					div.project-cover-img(style="background-image: url(./img/bg_2.JPG);")
-					div.title 
-						h3 Bespoke Dwellings
+					a(href="./projects-category.html?c=bespoke-dwellings")
+						div.project-cover-img(style="background-image: url(./img/bg_2.JPG);")
+						div.title 
+							h3 Bespoke Dwellings
 				li.project-category__card
-					div.project-cover-img(style="background-image: url(./img/bg_1.JPG);")
-					div.title 
-						h3 Extensions
+					a(href="./projects-category.html?c=extensions")
+						div.project-cover-img(style="background-image: url(./img/bg_1.JPG);")
+						div.title 
+							h3 Extensions
 				li.project-category__card
-					div.project-cover-img(style="background-image: url(./img/bg_3.JPG);")
-					div.title 
-						h3 Community &amp; Education
+					a(href="./projects-category.html?c=community-education")
+						div.project-cover-img(style="background-image: url(./img/bg_3.JPG);")
+						div.title 
+							h3 Community &amp; Education

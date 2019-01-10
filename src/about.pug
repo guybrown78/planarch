@@ -4,7 +4,7 @@ extends layout
 
 block content
 	- var currentPath = 'about';
-	section.page-header#js-page-header(data-current-path=`${currentPath}`)
+	section.page-header#js-page-header(data-currentpath=`${currentPath}`)
 		include nav
 		div.page-hero#js-pagehero
 			div(class="slider-text-inner text-center")

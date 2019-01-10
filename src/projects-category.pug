@@ -3,13 +3,18 @@ extends layout
 
 block content
 	- var currentPath = 'projects-category';
-	section.page-header#js-page-header(data-currentpath=`${currentPath}`)
+	section(class="page-header small-header", id="js-page-header", data-currentpath=`${currentPath}`)
 		include nav
-		div.page-hero#js-pagehero
+		div(class="page-hero", id="js-pagehero")
 			div(class="slider-text-inner text-center")
-				h1 CategoryType Projects
-				h2 Completed &amp; Conceptual Designs by PlanArch
+				h1(id="js-project-category-title")
 
 	section.page-items
 		div.page-details
-			div.project-category-cards-app hello
+			ul(class="page-details-tabs breadcrumbs")
+				li.breadcrumb
+					a(href="./projects.html") Project categories
+				li.breadcrumb
+					div(class="current-item" id="js-project-category-current-bc")
+			div.page-details-content
+				div(class="project-category-cards-app" id="js-category-items") hello

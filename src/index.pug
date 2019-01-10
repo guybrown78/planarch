@@ -1,28 +1,21 @@
 //- index.pug
 extends layout
 
-
-
 block content
-	<section class="page-header" id="js-page-header">
 	- var currentPath = 'index';
+	section.page-header#js-page-header(data-currentpath=`${currentPath}`)
 		include nav
-		<div class="page-hero" id="js-pagehero">
-			<div class="slider-text-inner text-center">
+		div.page-hero#js-pagehero
+			div(class="slider-text-inner text-center")
 				h1 We Design Your Future
 				h2 Architectural and Town Planning Consultance
-			</div>
-		</div>
-	</section>
-
-	<section class="page-items">
-		<div class="page-details">
-			<ul class="page-details-tabs">
-				<li>
-					<h2>Planning & Design</h2>
-				</li>
-			</ul>
-			<div class="page-details-content">
+	
+	section.page-items
+		div.page-details
+			ul.page-details-tabs
+				li
+					h2 Planning &amp; Design
+			div.page-details-content
 				<p>The business provides consultancy in Town Planning and in Architecture, with the intention being that clients can be offered a seamless service through all phases of a project, from conception to completion, or if preferred, more individual areas of service can be provided tailored to clients’ specific requirements.</p>
 				<div class="page-details-content-block left">
 					<div class="page-details-content-block__icon">
@@ -83,5 +76,3 @@ block content
 				</div>
 				<h4 class="small-card__title">Topographical Surveys</h4>
 			</div>
-		</div>
-	</section>

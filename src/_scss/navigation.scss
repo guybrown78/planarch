@@ -1,11 +1,6 @@
 
-.navbar {
-    font-size: 1.9em;
-    padding-bottom: $padding-small;
-    z-index: 3;
-
-    &::after {
-        content: "";
+@mixin add-nav-grad($height:$pageHeaderHeight) {
+    content: "";
         background-image: linear-gradient(250deg, $blue-light 50%, $orange-light 100%);
         opacity: 0.35;
         top: 0;
@@ -14,10 +9,28 @@
         right: 0;
         position: absolute;
         z-index: -1;
-        height: 500px;
+        height: $height;
         transition: opacity .25s ease-in-out;
+}
+
+.page-header {
+    .navbar {
+        font-size: 1.9em;
+        padding-bottom: $padding-small;
+        z-index: 3;
+        &::after {
+            @include add-nav-grad($height:$pageHeaderHeight);
+        }
     }
 }
+.small-header{
+    .navbar {
+        &::after {
+            @include add-nav-grad($height:$pageHeaderSmallHeight);
+        }
+    }
+}
+
 
 
 
