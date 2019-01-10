@@ -115,10 +115,10 @@
             @media #{$screen-greater-than-medium} {
                 width: 25%;
             }
-            box-shadow: 10px 5px 40px 20px darken($grey-lighter, 5%);
+            box-shadow: 10px 5px 40px 20px darken($grey-lighter, 2%);
             transition: .25s;
             &:hover {
-                box-shadow: 10px 5px 40px 20px darken($grey-lighter, 10%);
+                box-shadow: 10px 5px 40px 20px darken($grey-lighter, 8%);
                 cursor: pointer;
                 .button-primary {
                     transform: translate(10px, 0);
@@ -143,7 +143,7 @@
                 padding: $padding-small;
                 background-color:#fff;
                 width:100%;
-                height: 100
+                height: 100%;
             }
             .body-content {
                 padding-bottom: $padding-medium;

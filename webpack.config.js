@@ -3,6 +3,7 @@ const webpack = require('webpack');
 
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const js = {
 	test: /\.js$/,
@@ -41,6 +42,13 @@ const img = {
 	]
 };
 
+// const images = {
+// 		test: /\.(png|svg|jpg|gif)$/,
+// 		use: [
+// 			'img-loader'
+// 		]
+// };
+
 const html = {
 	test: /\.html$/,
 	use: [{
@@ -55,6 +63,7 @@ module.exports = {
 		rules: [js,
 			html,
 			img,
+			//images,
 			scss,
 			pug
 		]
@@ -84,6 +93,9 @@ module.exports = {
 		new MiniCssExtractPlugin({
 			filename: "[name].css",
 			chunkFilename: "[id].css"
-		})
+		}),
+		new CopyWebpackPlugin([
+			{from:'src/project-imgs',to:'project-imgs'} 
+		])
 	]
 };

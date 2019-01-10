@@ -13,9 +13,9 @@ class Button extends React.Component {
 
 class CardHeader extends React.Component {
   render() {
-    const { image, category } = this.props;
+    const { image, category, id } = this.props;
     var style = { 
-        backgroundImage: 'url(' + image + ')',
+        backgroundImage: `url(./project-imgs/${category}/${id}/${encodeURI(image)})`
     };
     return (
       <header style={style} className="card-header">
@@ -49,7 +49,7 @@ class ProjectCategoryCard extends React.Component {
   render() {
     return (
       <article className="card">
-        <CardHeader category={this.props.category} image={this.props.details.image}/>
+        <CardHeader category={this.props.category} image={this.props.details.image} id={this.props.details.id}/>
         <CardBody title={this.props.details.title} project={this.props.details.project} site={this.props.details.site}/>
       </article>
     )
