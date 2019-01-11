@@ -1,9 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import ProjectsData from "./models/Projects";
-//import ProjectCategoryItems from './components/ProjectCategoryItems'
-
-
+import ProjectItemModal from './components/ProjectItemModal'
 
 function projectItem(){
   // get and set page parameters from query string
@@ -13,19 +11,25 @@ function projectItem(){
   // set generic page content (titles etc...)
   const titleEL = document.getElementById("js-page-hero-title");
   const currentBreadcrumbEL = document.getElementById("js-current-breadcrumb");
+  const parentBreadcrumbEL = document.getElementById("js-parent-breadcrumb");
   //
   // get data
   const categoriesCardData = ProjectsData.find(cat => cat.category === currentCategory).cards;
   const itemData = categoriesCardData.find(item => item.id === currentItemId);
   //
   titleEL.innerHTML = `${itemData.title}`.toUpperCase();
+  parentBreadcrumbEL.innerHTML = `${currentCategory} Projects`;
+  const parentBreadcrumbURL = parentBreadcrumbEL.getAttribute('href');
+  parentBreadcrumbEL.setAttribute('href', `${parentBreadcrumbURL}?c=${currentCategory}`)
   currentBreadcrumbEL.innerHTML = `${itemData.title}`;
-  console.log(currentCategory);
   // set main content
   // get DOM element
-  const wrapperEL = document.getElementById("js-category-items");
+  console.log("kkkk")
+  const wrapperEL = document.getElementById("js-project-item");
   // go
-  //ReactDOM.render(<ProjectCategoryItems cards={categoriesCardData} category={currentCategory} />, wrapperEL);
+  console.log(wrapperEL);
+  ReactDOM.render(<ProjectItemModal />, wrapperEL);
+
 }
 
 export default projectItem
