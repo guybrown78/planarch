@@ -1,6 +1,7 @@
 import style from "./_scss/main.scss";
 import navigation from './js/navigation';
 import projectsCategory from './js/projectsCategory';
+import projectItem from './js/projectItem';
 
 function init() {
 	// initialise js
@@ -41,6 +42,12 @@ function init() {
 	if(currentPath === "projects-category"){
 		// add projects-category scripts
 		currentPageScript = new projectsCategory();
+		return;
+	}
+	if(currentPath === "project-item"){
+		// add project-citem scripts
+		currentPageScript = new projectItem();
+		return;
 	}
 }
 

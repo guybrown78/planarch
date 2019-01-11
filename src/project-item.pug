@@ -1,8 +1,8 @@
-//- projects-category.pug
+//- project-item.pug
 extends layout
 
 block content
-	- var currentPath = 'projects-category';
+	- var currentPath = 'project-item';
 	section(class="page-header small-header", id="js-page-header", data-currentpath=`${currentPath}`)
 		include nav
 		div(class="page-hero", id="js-pagehero")
@@ -15,6 +15,8 @@ block content
 				li.breadcrumb
 					a(href="./projects.html") Project categories
 				li.breadcrumb
+					a(href="./projects-category.html") Category
+				li.breadcrumb
 					div(class="current-item" id="js-current-breadcrumb")
 			div.page-details-content
-				div(class="project-category-cards-app" id="js-category-items") hello
+				div(class="project-item-app" id="js-project-item") project item

@@ -47,11 +47,12 @@ class CardBody extends React.Component {
 
 class ProjectCategoryCard extends React.Component {
   render() {
+    const itemURL = `./project-item.html?c=${this.props.category}&id=${this.props.details.id}`;
     return (
-      <article className="card">
+      <a href={itemURL} className="card">
         <CardHeader category={this.props.category} image={this.props.details.image} id={this.props.details.id}/>
         <CardBody title={this.props.details.title} project={this.props.details.project} site={this.props.details.site}/>
-      </article>
+      </a>
     )
   }
 }

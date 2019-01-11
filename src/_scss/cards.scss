@@ -109,13 +109,15 @@
             display: flex;
             flex-direction: column;
             align-items: stretch;
+            text-decoration: none;
+            color: #000;
             @media #{$screen-greater-than-small} {
                 width: 45%;
             }
             @media #{$screen-greater-than-medium} {
                 width: 25%;
             }
-            box-shadow: 10px 5px 40px 20px darken($grey-lighter, 2%);
+            box-shadow: 10px 5px 40px 20px darken($grey-lighter, 1%);
             transition: .25s;
             &:hover {
                 box-shadow: 10px 5px 40px 20px darken($grey-lighter, 8%);

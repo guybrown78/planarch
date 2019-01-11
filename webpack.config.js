@@ -86,6 +86,10 @@ module.exports = {
 			filename: 'projects-category.html'
 		}),
 		new HtmlWebpackPlugin({
+			template: 'src/project-item.pug',
+			filename: 'project-item.html'
+		}),
+		new HtmlWebpackPlugin({
 			template: 'src/about.pug',
 			filename: 'about.html',
 			//inject: false
