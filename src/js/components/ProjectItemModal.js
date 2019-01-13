@@ -10,7 +10,6 @@ const styles = {
 class ProjectItemModal extends React.Component {
   constructor(props) {
     super(props);
-    console.log("boom")
     this.state = {
       open: true
     };

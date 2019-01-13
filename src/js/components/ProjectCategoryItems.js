@@ -6,14 +6,16 @@ class ProjectCategoryItems extends Component {
     super(props);
     this.state = {
       category: this.props.category,
-      cards: this.props.cards
+      cards: this.props.cards,
+      //onCardClick: this.props.onCardClicked
     };
   }
 
   componentWillMount() {
     this.setState({
       category: this.props.category,
-      cards: this.props.cards
+      cards: this.props.cards,
+      //onCardClick: this.props.onCardClicked
     });
   }
 
@@ -23,7 +25,13 @@ class ProjectCategoryItems extends Component {
         {
           Object
           .keys(this.state.cards)
-          .map(key => <ProjectCategoryCard key={key} index={key} details={this.state.cards[key]} category={this.state.category}/>)
+          .map(key => <ProjectCategoryCard 
+              key={key} 
+              index={key} 
+              details={this.state.cards[key]} 
+              category={this.state.category}
+              //onClick={this.state.onCardClick}
+            />)
         }
       </div>
     );

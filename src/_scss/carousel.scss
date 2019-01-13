@@ -1,0 +1,19 @@
+@import './carousel.css';
+
+.carousel{
+  .thumbs-wrapper{
+    display: none;
+    .thumbs{
+      .thumb{
+        &.selected,
+        &:hover{
+          border-color: $blue-base;
+        }
+      }
+    }
+    @media #{$screen-greater-than-small} {
+      display: block;
+  }
+  
+  }
+}
