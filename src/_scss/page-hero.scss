@@ -17,10 +17,16 @@
     color: $white;
 }
 .slider-text-inner h1{
-    font-size: 5em;
+    font-size: 3em;
+    @media #{$screen-greater-than-small} {
+        font-size: 5em;
+    }
 }
 .slider-text-inner h2{
-    font-size: 2em;
+    font-size: 1.6em;
+    @media #{$screen-greater-than-small} {
+        font-size: 2em;
+    }
 }
 .page-hero.set-back{
     opacity: 0.05;
