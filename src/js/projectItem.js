@@ -2,27 +2,34 @@ import React from "react";
 import ReactDOM from "react-dom";
 import ProjectsData from "./models/Projects";
 import ProjectItemCarousel from './components/ProjectItemCarousel'
+import ProjectItemInfo from './components/ProjectItemInfo'
 
 // get and set page parameters from query string
 const urlParams = new URLSearchParams(window.location.search);
 const currentCategory = urlParams.get('c');
 const currentItemId = urlParams.get('id');
-// get data
-const categoriesData = ProjectsData.find(cat => cat.category === currentCategory);
-const itemData = categoriesData.cards.find(item => item.id === currentItemId);
+
 //
 
 function projectItem(){
-  initialisePage();
+  // get data
+  const categoriesData = ProjectsData.find(cat => cat.category === currentCategory);
+  const itemData = categoriesData.cards.find(item => item.id === currentItemId);
+  //
+  initialisePage(itemData);
   // set main content
-  const wrapperEL = document.getElementById("js-project-item");
+  const carouselEL = document.getElementById("js-project-item-carousel");
   ReactDOM.render(<ProjectItemCarousel 
     category={currentCategory}
     details={itemData}
-  />, wrapperEL);
+  />, carouselEL);
+  const infoEL = document.getElementById("js-project-item-info");
+  ReactDOM.render(<ProjectItemInfo 
+    details={itemData}
+  />, infoEL);
 }
 
-function initialisePage(){
+function initialisePage(itemData){
   // set generic page content (titles etc...)
   const titleEL = document.getElementById("js-page-hero-title");
   const currentBreadcrumbEL = document.getElementById("js-current-breadcrumb");
