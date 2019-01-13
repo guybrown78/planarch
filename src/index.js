@@ -2,6 +2,9 @@ import style from "./_scss/main.scss";
 import navigation from './js/navigation';
 import projectsCategory from './js/projectsCategory';
 import projectItem from './js/projectItem';
+import smoothscroll from 'smoothscroll-polyfill';
+ 
+
 
 function init() {
 	// initialise js
@@ -17,6 +20,8 @@ function init() {
 	// console.log(parseInt(style.screenLargeMaxWidth));
 	// console.log(parseInt(style.screenXLargeMinWidth));
 
+	// kick off the polyfill!
+	smoothscroll.polyfill();
 	// get the scrollToTopButton
 	const scrollToTopButton = document.getElementById("js-scroll-up");
 	// read the curent path
@@ -33,8 +38,9 @@ function init() {
 	};
   // When the user clicks on the button, scroll to the top of the document
 	scrollToTopButton.addEventListener("click", function(event) {
-		document.body.scrollTop = 0; // For Safari
-  	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		// document.body.scrollTop = 0; // For Safari
+		// document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		window.scroll({ top: 0, left: 0, behavior: 'smooth' });
 	});
 	// 
 	// actions dependant on currentPath
