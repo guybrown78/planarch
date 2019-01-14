@@ -1,19 +1,30 @@
 @import './carousel.css';
 
-.carousel{
-  .thumbs-wrapper{
-    display: none;
-    .thumbs{
-      .thumb{
-        &.selected,
-        &:hover{
-          border-color: $blue-base;
+.project-item-carousel{
+  .carousel{
+    .thumbs-wrapper{
+      display: none;
+      .thumbs{
+        .thumb{
+          &.selected,
+          &:hover{
+            border-color: $blue-base;
+          }
         }
       }
+      @media #{$screen-greater-than-small} {
+        display: block;
+      }
     }
-    @media #{$screen-greater-than-small} {
-      display: block;
   }
-  
+}
+
+.project-item-info{
+  .info--item{
+    padding: 0.3em 0;
+    .info--item_title{
+      font-weight: bold;
+      padding-right: 3px;
+    }
   }
 }

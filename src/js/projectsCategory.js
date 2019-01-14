@@ -16,6 +16,10 @@ function projectsCategory(){
   // set main content
   // get DOM elements
   const itemsEL = document.getElementById("js-category-items");
+  if(categoriesData.cards.length <= 0){
+    itemsEL.innerHTML = `<div class="no-data-msg"><p>There are currently no items for this category. Please select another <a href="./projects.html">category</a></p></div>`;
+    return;
+  }
   //const projectItemEL = document.getElementById("js-project-item");
   // add react components
   // cards
@@ -38,8 +42,11 @@ function initialisePage(){
    // set generic page content (titles etc...)
    const titleEL = document.getElementById("js-page-hero-title");
    const currentBreadcrumbEL = document.getElementById("js-current-breadcrumb");
-   titleEL.innerHTML = `${currentCategory} projects`.toUpperCase();
-   currentBreadcrumbEL.innerHTML = `${currentCategory} Projects`;
+   titleEL.innerHTML = `${categoriesData.displayName}`.toUpperCase();
+   currentBreadcrumbEL.innerHTML = `
+    <i class="far fa-arrow-alt-circle-right"></i>
+    <span>${categoriesData.displayName}</span>
+   `;
 }
 
 // function initialiseItem(id){

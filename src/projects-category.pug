@@ -12,10 +12,12 @@ block content
 	section.page-items
 		div.page-details
 			ul(class="page-details-tabs breadcrumbs")
-				li.breadcrumb
-					a(href="./projects.html") Project categories
-				li.breadcrumb
-					div(class="current-item" id="js-current-breadcrumb")
+					li(class="breadcrumb depth-1")
+						a(href="./projects.html")
+							i(class="fas fa-arrow-circle-right")
+							span Project categories
+					li(class="breadcrumb depth-2")
+						div(class="current-item" id="js-current-breadcrumb")
 			div.page-details-content
 				div(class="project-category-cards-app" id="js-category-items")
 				div(class="project-item-app" id="js-project-item")

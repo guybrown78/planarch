@@ -25,7 +25,7 @@ body {
 	padding: 0 $padding-large;
 }
 .page-items{
-	padding: 0 $padding-large;
+	padding: 0 $padding-small;
 	clear: both;
 	font-size: 1.3em;
 	margin: 0 auto;
@@ -46,11 +46,17 @@ body {
   font-size: 14px; /* Increase font size */
 }
 
+.no-data-msg{
+	display: flex;
+	min-height: 250px;
+}
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
 @media #{$screen-medium} {
-
+	.page-items{
+		padding: 0 $padding-large;
+	}
 }
 @media #{$screen-large} {
 	.page-header,

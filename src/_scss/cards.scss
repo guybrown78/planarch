@@ -58,7 +58,8 @@
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	list-style: none;
+    list-style: none;
+    text-decoration: none;
 	&__card{
 		background-color: $white;
         flex-grow: 1;
@@ -67,6 +68,20 @@
         display: flex;
         flex-direction: column;
         align-items: stretch;
+        //
+        box-shadow: 10px 5px 40px 20px darken($grey-lighter, 1%);
+        transition: .25s;
+        &:hover {
+            box-shadow: 10px 5px 40px 20px darken($grey-lighter, 8%);
+            cursor: pointer;
+            .title {
+                transform: translate(10px, 0);
+            }
+        }
+        a{
+            text-decoration: none;
+        }
+        
 		.project-cover-img{
             display: block;
             height: 180px;
@@ -76,7 +91,16 @@
             background-repeat: no-repeat;
 		}
 		.title{
-			padding: $padding-small;
+            padding: $padding-small;
+            border: none;
+            box-shadow: none;
+            background-color:transparent;
+            color: $blue-base;
+            font-size: 1.0em;
+            transition:.25s;
+            i{
+                padding-right:4px;
+            }
         }
         @media #{$screen-medium} {
             width: 45%;
@@ -90,11 +114,8 @@
 }
 
 
-.project-category-cards-app{
-    
-    
+.project-category-cards-app{ 
     .card-items {
-        // border: solid 1px blue;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;

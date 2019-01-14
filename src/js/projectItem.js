@@ -16,9 +16,15 @@ function projectItem(){
   const categoriesData = ProjectsData.find(cat => cat.category === currentCategory);
   const itemData = categoriesData.cards.find(item => item.id === currentItemId);
   //
-  initialisePage(itemData);
+  initialisePage(categoriesData, itemData);
   // set main content
   const carouselEL = document.getElementById("js-project-item-carousel");
+
+  if(itemData == null){
+    carouselEL.innerHTML = `<div class="no-data-msg"><p>Sorry, the data for this item is currently unavailable. Please select another <a href="./projects-category.html?c=${currentCategory}">item</a> from the ${categoriesData.displayName} category</p></div>`;
+    return;
+  }
+
   ReactDOM.render(<ProjectItemCarousel 
     category={currentCategory}
     details={itemData}
@@ -29,16 +35,28 @@ function projectItem(){
   />, infoEL);
 }
 
-function initialisePage(itemData){
+function initialisePage(categoriesData, itemData){
   // set generic page content (titles etc...)
   const titleEL = document.getElementById("js-page-hero-title");
   const currentBreadcrumbEL = document.getElementById("js-current-breadcrumb");
   const parentBreadcrumbEL = document.getElementById("js-parent-breadcrumb");
   const parentBreadcrumbURL = parentBreadcrumbEL.getAttribute('href');
-  titleEL.innerHTML = `${itemData.title}`.toUpperCase();
-  parentBreadcrumbEL.innerHTML = `${currentCategory} Projects`;
+ 
+  parentBreadcrumbEL.innerHTML = `
+    <i class="fas fa-arrow-circle-right"></i>
+    <span>${categoriesData.displayName}</span>
+    `;
   parentBreadcrumbEL.setAttribute('href', `${parentBreadcrumbURL}?c=${currentCategory}`)
-  currentBreadcrumbEL.innerHTML = `${itemData.title}`;
+
+  if(itemData == null){
+    return;
+  }
+
+  titleEL.innerHTML = `${itemData.title}`.toUpperCase();
+  currentBreadcrumbEL.innerHTML = `
+    <i class="far fa-arrow-alt-circle-right"></i>
+    <span>${itemData.title}</span>
+  `;
 }
 
 export default projectItem

@@ -1,4 +1,5 @@
 @import './carousel.scss';
+@import './breadcrumbs.scss';
 
 .page-details{
 	background-color: rgba(255, 255, 255, 0.3) ;
@@ -25,7 +26,10 @@
 }
 .page-details-content{
 	background-color:$white;
-	padding: $padding-small $padding-large;
+	padding: $padding-small $padding-small;
+	@media #{$screen-greater-than-small} {
+		padding: $padding-small $padding-large;
+	}
 }
 .page-details-content-block{
 	padding: .2em;

@@ -3,7 +3,7 @@ extends layout
 
 block content
 	- var currentPath = 'projects';
-	section.page-header#js-page-header(data-currentpath=`${currentPath}`)
+	section(class="page-header small-header", id="js-page-header", data-currentpath=`${currentPath}`)
 		include nav
 		div.page-hero#js-pagehero
 			div(class="slider-text-inner text-center")
@@ -12,39 +12,59 @@ block content
 
 	section.page-items
 		div.page-details
-			ul.project-category
-				li.project-category__card 
-					a(href="./projects-category.html?c=commercial")
-						div.project-cover-img(style="background-image: url(./img/bg_2.JPG);")
-						div.title 
-							h3 Commercial
-				li.project-category__card
-					a(href="./projects-category.html?c=conversions")
-						div.project-cover-img(style="background-image: url(./img/bg_1.JPG);")
-						div.title 
-							h3 Conversions
-				li.project-category__card
-					a(href="./projects-category.html?c=future")
-						div.project-cover-img(style="background-image: url(./img/bg_2.JPG);")
-						div.title 
-							h3 Future Projects
-				li.project-category__card
-					a(href="./projects-category.html?c=residential-development")
-						div.project-cover-img(style="background-image: url(./img/bg_3.JPG);")
-						div.title 
-							h3 Residential Development
-				li.project-category__card
-					a(href="./projects-category.html?c=bespoke-dwellings")
-						div.project-cover-img(style="background-image: url(./img/bg_2.JPG);")
-						div.title 
-							h3 Bespoke Dwellings
-				li.project-category__card
-					a(href="./projects-category.html?c=extensions")
-						div.project-cover-img(style="background-image: url(./img/bg_1.JPG);")
-						div.title 
-							h3 Extensions
-				li.project-category__card
-					a(href="./projects-category.html?c=community-education")
-						div.project-cover-img(style="background-image: url(./img/bg_3.JPG);")
-						div.title 
-							h3 Community &amp; Education
+			ul(class="page-details-tabs breadcrumbs")
+					li(class="breadcrumb depth-1")
+						div(class="current-item" id="js-current-breadcrumb")
+							i(class="far fa-arrow-alt-circle-right")
+							span Project categories
+			div.page-details-content
+				ul.project-category
+					li.project-category__card 
+						a(href="./projects-category.html?c=commercial")
+							div.project-cover-img(style="background-image: url(./img/bg_2.JPG);")
+							div.title 
+								h3
+									i(class="fa fa-chevron-right")
+									span Commercial
+					li.project-category__card
+						a(href="./projects-category.html?c=conversions")
+							div.project-cover-img(style="background-image: url(./img/bg_1.JPG);")
+							div.title 
+								h3 
+									i(class="fa fa-chevron-right")
+									span Conversions
+					li.project-category__card
+						a(href="./projects-category.html?c=future")
+							div.project-cover-img(style="background-image: url(./img/bg_2.JPG);")
+							div.title 
+								h3 
+									i(class="fa fa-chevron-right")
+									span Future Projects
+					li.project-category__card
+						a(href="./projects-category.html?c=residential-development")
+							div.project-cover-img(style="background-image: url(./img/bg_3.JPG);")
+							div.title 
+								h3
+									i(class="fa fa-chevron-right")
+									span Residential Development
+					li.project-category__card
+						a(href="./projects-category.html?c=bespoke-dwellings")
+							div.project-cover-img(style="background-image: url(./img/bg_2.JPG);")
+							div.title 
+								h3
+									i(class="fa fa-chevron-right")
+									span Bespoke Dwellings
+					li.project-category__card
+						a(href="./projects-category.html?c=extensions")
+							div.project-cover-img(style="background-image: url(./img/bg_1.JPG);")
+							div.title 
+								h3
+									i(class="fa fa-chevron-right")
+									span Extensions
+					li.project-category__card
+						a(href="./projects-category.html?c=community-education")
+							div.project-cover-img(style="background-image: url(./img/bg_3.JPG);")
+							div.title 
+								h3
+									i(class="fa fa-chevron-right")
+									span Community &amp; Education

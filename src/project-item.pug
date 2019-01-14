@@ -12,11 +12,15 @@ block content
 	section.page-items
 		div.page-details
 			ul(class="page-details-tabs breadcrumbs")
-				li.breadcrumb
-					a(href="./projects.html") Project categories
-				li.breadcrumb
-					a(href="./projects-category.html" id="js-parent-breadcrumb") Category
-				li.breadcrumb
+				li(class="breadcrumb depth-1")
+					a(href="./projects.html") 
+						i(class="fas fa-arrow-circle-right")
+						span Project categories
+				li(class="breadcrumb depth-2")
+					a(href="./projects-category.html" id="js-parent-breadcrumb")
+						i(class="fas fa-arrow-circle-right")
+						span 
+				li(class="breadcrumb depth-3")
 					div(class="current-item" id="js-current-breadcrumb")
 			div.page-details-content
 				div(class="project-item-carousel" id="js-project-item-carousel") 

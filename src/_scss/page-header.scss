@@ -40,9 +40,12 @@ $pageHeaderSmallHeight: 350px;
 // }
 // set set page specific background images based on the current path embedded into the .page-header as a data attribute
 .page-header[data-currentpath="projects"]::after{
-    @include add-header-bg($bgImgURL:'../img/bg_2.JPG', $height:$pageHeaderHeight);
+    @include add-header-bg($bgImgURL:'../img/bg_2.JPG', $height:$pageHeaderSmallHeight);
 }
 .page-header[data-currentpath="projects-category"]::after{
+    @include add-header-bg($bgImgURL:'../img/bg_2.JPG', $height:$pageHeaderSmallHeight);
+}
+.page-header[data-currentpath="project-item"]::after{
     @include add-header-bg($bgImgURL:'../img/bg_2.JPG', $height:$pageHeaderSmallHeight);
 }
 .page-header[data-currentpath="about"]::after{
