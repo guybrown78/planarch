@@ -2,6 +2,7 @@ import style from "./_scss/main.scss";
 import navigation from './js/navigation';
 import projectsCategory from './js/projectsCategory';
 import projectItem from './js/projectItem';
+import aboutPage from './js/aboutPage';
 import contactPage from './js/contactPage';
 
 //
