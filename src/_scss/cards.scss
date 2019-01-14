@@ -69,6 +69,29 @@
     }
 }
 
+.page-guide-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: $padding-small;
+    margin: 0;
+    .guide-card{
+        h4{
+            color: $grey-base;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            i{
+                padding-right: 5px;
+                font-size: 1.3em;
+            }
+        }
+        background: $white;
+        padding: $padding-small;
+        margin-bottom: $padding-small;
+    }
+}
+
 .project-category{
 	display: flex;
 	flex-flow: row wrap;

@@ -90,9 +90,17 @@ module.exports = {
 			filename: 'project-item.html'
 		}),
 		new HtmlWebpackPlugin({
+			template: 'src/guide.pug',
+			filename: 'guide.html',
+		}),
+		new HtmlWebpackPlugin({
 			template: 'src/about.pug',
 			filename: 'about.html',
 			//inject: false
+		}),
+		new HtmlWebpackPlugin({
+			template: 'src/contact.pug',
+			filename: 'contact.html',
 		}),
 		new MiniCssExtractPlugin({
 			filename: "[name].css",

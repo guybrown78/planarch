@@ -1,0 +1,43 @@
+//- about.pug
+extends layout
+
+block content
+	- var currentPath = 'contact';
+	section.page-header#js-page-header(data-currentpath=`${currentPath}`)
+		include nav
+		div.page-hero#js-pagehero
+			div(class="slider-text-inner text-center")
+				h1 Say Hello
+
+	section.page-items
+		div.page-details
+			ul.page-details-tabs
+				li
+					h2 Contact Details
+			div.page-details-content
+				p Lorum ipsum ...
+
+			div.page-small-cards
+				div(class="small-card text-center")
+					div.small-card__icon
+						i(class="fas fa-phone")
+					h4.small-card__title Phone
+					p (01388) 608166
+				
+				div(class="small-card text-center")
+					div.small-card__icon
+						i(class="fas fa-fax")
+					h4.small-card__title Fax
+					p (01388) 608168
+
+				div(class="small-card text-center")
+					div.small-card__icon
+						i(class="fas fa-at")
+					h4.small-card__title Email
+					p e-mail@planarchdesign.co.uk
+
+				div(class="small-card text-center")
+					div.small-card__icon
+						i(class="fas fa-map-marker-alt")
+					h4.small-card__title PlanArch Design Ltd
+					p Kingsway Court, 54 Kingsway<br />Bishop Auckland, Co.Durham, DL14 7JF
