@@ -41,3 +41,9 @@ block content
 						i(class="fas fa-map-marker-alt")
 					h4.small-card__title PlanArch Design Ltd
 					p Kingsway Court, 54 Kingsway<br />Bishop Auckland, Co.Durham, DL14 7JF
+				
+			div.page-details-content
+				div(class="planarch-map" id="js-planarch-map")
+
+block scripts
+	script(src=`https://maps.googleapis.com/maps/api/js?key=${'AIzaSyCYVJ2nF6ZH3WqvKHsKmsACvi5J5lVo4Kk'}&libraries=places`)

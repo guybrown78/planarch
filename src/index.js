@@ -2,12 +2,11 @@ import style from "./_scss/main.scss";
 import navigation from './js/navigation';
 import projectsCategory from './js/projectsCategory';
 import projectItem from './js/projectItem';
-import aboutPage from './js/aboutPage';
+import contactPage from './js/contactPage';
+
 //
 import smoothscroll from 'smoothscroll-polyfill';
  
-
-
 function init() {
 	// initialise js
 	const nav = new navigation();
@@ -50,6 +49,11 @@ function init() {
 	if(currentPath === "about"){
 		// add aboutPage scripts
 		currentPageScript = new aboutPage();
+		return;
+	}
+	if(currentPath === "contact"){
+		// add aboutPage scripts
+		currentPageScript = new contactPage();
 		return;
 	}
 }
