@@ -5,6 +5,24 @@
     margin-bottom: $padding-medium;
     padding: $padding-large;
     flex-direction: column;
+    &.icon-lead{
+        .icon-central-container{
+            display: flex;
+            justify-content: center;
+            
+            i{
+                font-size: 3em;
+                border-radius: 3em;
+                color: $orange-base;
+                margin-bottom: 7px;
+                padding: 7px;
+                border: solid 3px $orange-base;
+            }
+        }
+        h2{
+            margin-bottom: 7px;
+        }
+    }
 }
 
 .page-small-cards {

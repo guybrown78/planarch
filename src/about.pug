@@ -19,14 +19,30 @@ block content
 			div.page-details-content
 				p A dynamic and award-winning consultancy offering integrated planning and architectural services, PlanArch Design Ltd operates from offices converted in 1994 from a former terrace of cottages in the Bishop Auckland Conservation Area. 
 				p We work regionally and nationally on planning and architectural schemes, with projects ranging from home extensions to major housing developments; designs for bespoke dwellings to work in the commercial, education and retail sectors; conversions and restoration of existing buildings, many with heritage credentials, as well as providing the full spectrum of planning consultancy services. 
-				i(class="fas fa-sitemap")
-				p Based on our ethos that the client is paramount, we provide a personalised service from a dedicated team committed to producing schemes of the highest quality whilst working closely with clients from inception to completion.
-				i(class="fas fa-quote-right")
-				i(class="far fa-comments")
-				p Based on testimonials regularly received, we are aware that our clients willingly recommend us, and the great majority of our projects come to us as a result of recommendations or viewings of work previously undertaken.
+				p This may be purely town planning advice regarding clients’ issues or negotiations with local planning authorities; an appeal against a refusal of planning permission; or seeking to make an existing use lawful.
+				div(class="page-details-content-block left")
+					div.page-details-content-block__icon
+						i(class="fas fa-sitemap")
+					div.page-details-content-block__text
+						p Based on our ethos that the client is paramount, we provide a personalised service from a dedicated team committed to producing schemes of the highest quality whilst working closely with clients from inception to completion.
+				
+				div(class="page-details-content-block right")
+					div.page-details-content-block__text
+						p Based on testimonials regularly received, we are aware that our clients willingly recommend us, and the great majority of our projects come to us as a result of recommendations or viewings of work previously undertaken.
+					div.page-details-content-block__icon
+						//- i(class="fas fa-quote-right")
+						i(class="far fa-comments")
 
-		div(class="small-card-header")
-			h2 PlanArch Design are at the heart of the community
-			i(class="fas fa-users")
+		div(class="small-card-header icon-lead")
+			div.icon-central-container
+				i(class="fas fa-users")
+			h2.text-center PlanArch Design are at the heart of the community
 			p In providing our planning and architectural services, we have remained conscious of our place in the community. Thus we are employers of local people wherever possible, and we have a record over a considerable number of years of taking students from local schools on work placements and, on a regular basis, employing a school leaver to train him or her through college and university to gain the necessary appropriate qualifications to work in the industry and to take their careers forward.
 			p We also sponsor, wherever appropriate, local initiatives and sports clubs, such as local football teams, as part of our role in the business community of Bishop Auckland. 
+		
+		div(class="client-testimonials")
+			div.intro Don't just take our word for it, read what our clients have to&nbsp;say...
+			div(class="testimonials-carousel")
+				//- i(class="fas fa-quote-left")
+				div(class="client-testimonials-app" id="js-client-testimonials")
+				//- i(class="fas fa-quote-right")

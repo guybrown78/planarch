@@ -2,6 +2,8 @@ import style from "./_scss/main.scss";
 import navigation from './js/navigation';
 import projectsCategory from './js/projectsCategory';
 import projectItem from './js/projectItem';
+import aboutPage from './js/aboutPage';
+//
 import smoothscroll from 'smoothscroll-polyfill';
  
 
@@ -9,16 +11,6 @@ import smoothscroll from 'smoothscroll-polyfill';
 function init() {
 	// initialise js
 	const nav = new navigation();
-
-	//pageHeader.style.height = 600 + 'px';
-	//navbar.style.height = 600 + 'px';
-	// let screenSize = parseInt(style.screenSmallMaxWidth);
-	// console.log(parseInt(style.screenSmallMaxWidth));
-	// console.log(parseInt(style.screenMediumMinWidth));
-	// console.log(parseInt(style.screenMediumMaxWidth));
-	// console.log(parseInt(style.screenLargeMinWidth));
-	// console.log(parseInt(style.screenLargeMaxWidth));
-	// console.log(parseInt(style.screenXLargeMinWidth));
 
 	// kick off the polyfill!
 	smoothscroll.polyfill();
@@ -53,6 +45,11 @@ function init() {
 	if(currentPath === "project-item"){
 		// add project-citem scripts
 		currentPageScript = new projectItem();
+		return;
+	}
+	if(currentPath === "about"){
+		// add aboutPage scripts
+		currentPageScript = new aboutPage();
 		return;
 	}
 }
