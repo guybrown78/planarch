@@ -1,7 +1,7 @@
 $pageHeaderHeight: 500px;
 $pageHeaderSmallHeight: 350px;
 
-@mixin add-header-bg($bgImgURL:'../img/bg_1.jpg', $height:$pageHeaderHeight) {
+@mixin add-header-bg($bgImgURL:'../img/header_bg_1.jpg', $height:$pageHeaderHeight) {
     content: "";
     background: url($bgImgURL) no-repeat center center fixed;
     background-color: $blue-lighter;
@@ -40,22 +40,22 @@ $pageHeaderSmallHeight: 350px;
 // }
 // set set page specific background images based on the current path embedded into the .page-header as a data attribute
 .page-header[data-currentpath="projects"]::after{
-    @include add-header-bg($bgImgURL:'../img/bg_2.jpg', $height:$pageHeaderSmallHeight);
+    @include add-header-bg($bgImgURL:'../img/header_bg_2.jpg', $height:$pageHeaderSmallHeight);
 }
 .page-header[data-currentpath="projects-category"]::after{
-    @include add-header-bg($bgImgURL:'../img/bg_2.jpg', $height:$pageHeaderSmallHeight);
+    @include add-header-bg($bgImgURL:'../img/header_bg_2.jpg', $height:$pageHeaderSmallHeight);
 }
 .page-header[data-currentpath="project-item"]::after{
-    @include add-header-bg($bgImgURL:'../img/bg_2.jpg', $height:$pageHeaderSmallHeight);
+    @include add-header-bg($bgImgURL:'../img/header_bg_2.jpg', $height:$pageHeaderSmallHeight);
 }
 .page-header[data-currentpath="about"]::after{
-    @include add-header-bg($bgImgURL:'../img/bg_3.jpg', $height:$pageHeaderSmallHeight);
+    @include add-header-bg($bgImgURL:'../img/header_bg_3.jpg', $height:$pageHeaderSmallHeight);
 }
 .page-header[data-currentpath="guide"]::after{
-    @include add-header-bg($bgImgURL:'../img/bg_4.jpg', $height:$pageHeaderSmallHeight);
+    @include add-header-bg($bgImgURL:'../img/header_bg_4.jpg', $height:$pageHeaderSmallHeight);
 }
 .page-header[data-currentpath="contact"]::after{
-    @include add-header-bg($bgImgURL:'../img/bg_5.jpg', $height:$pageHeaderSmallHeight);
+    @include add-header-bg($bgImgURL:'../img/header_bg_5.jpg', $height:$pageHeaderSmallHeight);
 }
 
 @import './navigation.scss';
