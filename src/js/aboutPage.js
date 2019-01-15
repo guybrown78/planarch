@@ -25,7 +25,7 @@ class ClienTestimonialsCarousel extends React.Component {
             <div>
               <p className="testimonial">
                 <i className="fas fa-quote-left"></i>
-                All the work was done to a very high standard, was delivered on time and within budget.
+                All the work was done to a very high standard, was delivered on time and within budget
                 <i className="fas fa-quote-right"></i>
               </p>
               <p className="client">A G Sillars</p>
@@ -33,7 +33,7 @@ class ClienTestimonialsCarousel extends React.Component {
             <div>
               <p className="testimonial">
                 <i className="fas fa-quote-left"></i>
-                Excellent all round service, solutions, and support.
+                Excellent all round service, solutions, and support
                 <i className="fas fa-quote-right"></i>
               </p>
               <p className="client">Craig Thompson</p>
@@ -57,7 +57,7 @@ class ClienTestimonialsCarousel extends React.Component {
             <div>
               <p className="testimonial">
                 <i className="fas fa-quote-left"></i>
-                PlanArch Design offered a superior service and were always willing to come to site if any issues arose. I would definitely recommend them to anyone and will use them again myself in the future.
+                PlanArch Design offered a superior service and were always willing to come to site if any issues arose. I would definitely recommend them to anyone and will use them again myself in the future
                 <i className="fas fa-quote-right"></i>
               </p>
               <p className="client">Paula Scott</p>
@@ -73,7 +73,7 @@ class ClienTestimonialsCarousel extends React.Component {
             <div>
               <p className="testimonial">
                 <i className="fas fa-quote-left"></i>
-                Throughout the design and construction process PlanArch staff were friendly, efficient, and very patient. Always prepared to explain issues in ‘laymans’ terms. Any concerns were dealt with no matter how trivial.
+                Throughout the design and construction process PlanArch staff were friendly, efficient, and very patient. Always prepared to explain issues in ‘laymans’ terms. Any concerns were dealt with no matter how trivial
                 <i className="fas fa-quote-right"></i>
               </p>
               <p className="client">Avril Hamilton</p>

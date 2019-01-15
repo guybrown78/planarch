@@ -12,8 +12,8 @@ const ProjectsData = [
         "text": `The development is on land adjacent to Scotswood Road in Newcastle upon Tyne and was for a major retailer of motor vehicles. The scheme comprises a purpose built vehicle body repair shop fitted with anchored jigs and paint spray booths, a valeting and MOT section, and a showroom originally for the sale of commercial vehicles but varied during the contract to a car showroom.  This was required to be heavily glazed on the elevations facing Scotswood Road.
         <br /><br />
         There was a requirement for a large number of parking spaces within the site boundary and it was also a consideration that vehicle delivery lorries, usually articulated, would need to access the site and be able to deliver without causing disruption to the traffic using Scotswood Road.`,
-        "image": "1187 photo 6.JPG",
-        "images": ["1187 photo 2.JPG","1187 photo 4.JPG","1187 photo 5.JPG","1187 photo 6.JPG","1187 photo 7.JPG"]
+        "image": "1187 photo 6-min.JPG",
+        "images": ["1187 photo 2-min.JPG","1187 photo 4-min.JPG","1187 photo 5-min.JPG","1187 photo 6-min.JPG","1187 photo 7-min.JPG"]
       },
       {
         "id": "1292",
@@ -26,8 +26,8 @@ const ProjectsData = [
         <br /><br />
         The factory extension is designed to complement the mass and character of the existing unit whilst using similar materials. The office extension is designed using clear crisp lines with full height glazing and rainscreen cladding. The existing brick built office block was refurbished externally using rainscreen cladding to match the extension in the company’s corporate colours. All the existing glazing units were replaced using powder coated glazed curtain walling to match the extension. Internally, imported Italian floor tiles throughout and the installation of a new suspended ceiling have enabled two separate buildings to be amalgamated successfully both from an internal and external appearance, which created a modern building as well as a comfortable working environment.   
         `,
-        "image": "1292 photo 1.JPG",
-        "images": ["1292 photo 1.JPG","1292 photo 2.JPG","1292 photo 3.JPG","1292 photo 4.JPG","1292 photo 5.JPG","1292 photo 6.JPG"]
+        "image": "1292 photo 1-min.JPG",
+        "images": ["1292 photo 1-min.JPG","1292 photo 2-min.JPG","1292 photo 3-min.JPG","1292 photo 4-min.JPG","1292 photo 5-min.JPG","1292 photo 6-min.JPG"]
       },
       {
         "id": "1325",
@@ -40,8 +40,8 @@ const ProjectsData = [
         <br /><br />
         Brambles Coffee Shop opened its doors to customers in February 2006, and it has proved to be a highly successful venture such that the facility was subsequently doubled in size. 
         `,
-        "image": "1325 photo 1.JPG",
-        "images": ["1325 photo 1.JPG","1325 photo 2.JPG","1325 photo 3.JPG",/*"1325 photo 4.JPG",*/"1325 photo 5.JPG","1325 photo 6.JPG"]
+        "image": "1325 photo 1-min.JPG",
+        "images": ["1325 photo 1-min.JPG","1325 photo 2-min.JPG","1325 photo 3-min.JPG",/*"1325 photo 4.JPG",*/"1325 photo 5-min.JPG","1325 photo 6-min.JPG"]
       },
       {
         "id": "1401",
@@ -56,8 +56,8 @@ const ProjectsData = [
         <br /><br />
         The building provided an opportunity for the client to showcase the company’s own products of profiled steel sheeting, including an innovative new panel which allowed the collection of solar heat which is then used to heat the building itself. 
         `,
-        "image": "1401 - 01.JPG",
-        "images": ["1401 - 01.JPG","1401 - 02.jpg","1401 - 03.jpg","1401 - 04.jpg","1401 - 05.jpg"]
+        "image": "1401 - 01-min.JPG",
+        "images": ["1401 - 01-min.JPG","1401 - 02-min.jpg","1401 - 03-min.jpg","1401 - 04-min.jpg","1401 - 05-min.jpg"]
       },
       {
         "id": "1484",
@@ -72,8 +72,8 @@ const ProjectsData = [
           <br /><br />
           The building is designed with clear crisp lines which create a sculptural aesthetically-pleasing building. The external materials also enhance the modern design by using smooth silver metallic wall and roof systems. The large areas of curtain walling and internal double height spaces further assist in creating this dynamically shaped and contemporary building.   
         `,
-        "image": "1484-01.JPG",
-        "images": ["1484-01.JPG","1484-02.JPG","1484-04.JPG","1484-06.JPG"]
+        "image": "1484-01-min.JPG",
+        "images": ["1484-01-min.JPG","1484-02-min.JPG","1484-04-min.JPG","1484-06-min.JPG"]
       },
     ]
   }, 

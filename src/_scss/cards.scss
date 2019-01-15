@@ -243,3 +243,17 @@
     }
     
 }
+
+.director-cards{
+    display:flex;
+    flex-direction: column;
+    .director{
+        margin-bottom: $padding-small;
+    }
+    @media #{$screen-greater-than-small} {
+        flex-direction: row;
+        .director{
+            margin-right: $padding-small;
+        }
+    }
+}
