@@ -90,7 +90,53 @@ const ProjectsData = [
   {
     "category": "residential-development",
     "displayName": "Residential Development",
-    "cards": []
+    "cards": [
+      {
+        "id": "1498",
+        "title": "Carlton",
+        "project":"Housing development",
+        "site":"Willow Bridge, Carlton, Stockton-on-Tees",
+        "la":"Stockton-on-Tees Borough Council",
+        "text": `
+        This housing development of eleven detached dwelling houses on land at Willow Bridge, Letch Lane, Carlton, Stockton-on-Tees is situated on what was a brownfield site of approximately 1.6 acres previously occupied by industrial/commercial buildings.
+        <br /><br />
+        The buildings are designed over two stories plus the roof space using a variation of five house types. Early consultation with the planning authority and a landscape architect achieved a landscape design which complements the functional requirements of the development, whilst also providing a suitable landscaped buffer zone to the adjacent commercial buildings. External materials comprise a mixture of render, traditional hand made style brick and art stone features.
+        `,
+        "image": "1498-2.JPG",
+        "images": ["1498-1.JPG","1498-2.JPG","1498-3.JPG","1498-4.JPG", "1498-5.JPG","1498-6.JPG","1498-7.JPG","1498-8.JPG","1498-9.JPG","1498-10.JPG"]
+      },
+      {
+        "id": "1504",
+        "title": "River View",
+        "project":"Apartment buildings",
+        "site":"River View, Bowesfield Lane, Stockton-on-Tees",
+        "la":"Stockton-on-Tees Borough Council",
+        "text": `
+        As consultants to the project our brief was to obtain Building Regulations Approval for bespoke apartments the designs of which were provided by the client. The site itself is a part of a master planned area that is undergoing significant development. The development of Bowesfield aims to create a riverside community of vibrant diversity. It aspires to be a living, working and leisure environment that works as a self supporting community.
+          <br /><br />
+          The open plan two bedroom apartments are within four storey buildings in three separate blocks, constructed in three phases. A total of sixty eight apartments were created and constructed using timber frame technology for the superstructure. The design of the blocks, external gallery walkways and the use of prefabricated timber cassettes, complying with NHBC requirements, made this an interesting and challenging project.   
+          
+        `,
+        "image": "1504 photo 1.jpg",
+        "images": ["1504 photo 1.jpg","1504 photo 2.JPG","1504 photo 3.JPG","1504 photo 4.JPG","1504 photo 5.JPG"]
+      },
+      {
+        "id": "",
+        "title": "",
+        "project":"",
+        "site":"",
+        "la":"",
+        "text": `
+          
+          <br /><br />
+          
+          <br /><br />
+          
+        `,
+        "image": "",
+        "images": ["","","",""]
+      }
+    ]
   },
   {
     "category": "bespoke-dwellings",
