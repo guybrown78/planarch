@@ -4,6 +4,7 @@ import projectsCategory from './js/projectsCategory';
 import projectItem from './js/projectItem';
 import aboutPage from './js/aboutPage';
 import contactPage from './js/contactPage';
+import guidePage from './js/guidePage';
 
 //
 import smoothscroll from 'smoothscroll-polyfill';
@@ -53,10 +54,24 @@ function init() {
 		return;
 	}
 	if(currentPath === "contact"){
-		// add aboutPage scripts
+		// add contactPage scripts
 		currentPageScript = new contactPage();
 		return;
 	}
+	if(currentPath === "guide"){
+		// add guidePage scripts
+		currentPageScript = new guidePage();
+		return;
+	}
+}
+
+if (window.NodeList && !NodeList.prototype.forEach) {
+	NodeList.prototype.forEach = function (callback, thisArg) {
+			thisArg = thisArg || window;
+			for (var i = 0; i < this.length; i++) {
+					callback.call(thisArg, this[i], i, this);
+			}
+	};
 }
 
 init();

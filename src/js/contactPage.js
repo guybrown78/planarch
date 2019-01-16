@@ -1,6 +1,6 @@
 
 
-function aboutPage(){
+function contactPage(){
   initialisePage();
   // set main content
   const mapEL = document.getElementById("js-planarch-map");
@@ -26,4 +26,4 @@ function initMap(mapEL) {
   var marker = new google.maps.Marker({position: uluru, map: map});
 }
 
-export default aboutPage
+export default contactPage
