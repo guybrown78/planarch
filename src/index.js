@@ -5,7 +5,6 @@ import projectItem from './js/projectItem';
 import aboutPage from './js/aboutPage';
 import contactPage from './js/contactPage';
 import guidePage from './js/guidePage';
-
 //
 import smoothscroll from 'smoothscroll-polyfill';
  
@@ -35,6 +34,8 @@ function init() {
 		// document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 		window.scroll({ top: 0, left: 0, behavior: 'smooth' });
 	});
+
+
 	// 
 	// actions dependant on currentPath
 	let currentPageScript = null;

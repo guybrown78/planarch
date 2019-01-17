@@ -24,7 +24,25 @@
         }
     }
 }
-
+.contact-cards-layout{
+    display: flex;
+    width: 100%;
+    //border: solid 1px red;
+    flex-direction: column;
+    .page-small-cards {
+        //border: solid 1px blue;
+        .small-card{
+            width: auto;
+        }
+    }
+    .page-large-cards {
+        //border: solid 1px blue;
+        .small-card{
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
 .page-small-cards {
     display: flex;
     flex-flow: row wrap;
