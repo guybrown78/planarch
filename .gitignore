@@ -2,3 +2,4 @@
 /dist/
 /planarchProjectImages
 .DS_Store
+variables.env

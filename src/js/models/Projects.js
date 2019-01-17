@@ -3,7 +3,8 @@ const ProjectsData = [
     "category": "commercial",
     "displayName": "Commercial",
     "imagePath":"./project-imgs/commercial/",
-    "cards": [{
+    "cards": [
+      {
         "id": "1187",
         "title": "Patterson Ford Scotswood Road",
         "project":"Vehicle body repair shop, MOT and valeting booths, and showroom",
@@ -75,6 +76,70 @@ const ProjectsData = [
         "image": "1484-01-min.JPG",
         "images": ["1484-01-min.JPG","1484-02-min.JPG","1484-04-min.JPG","1484-06-min.JPG"]
       },
+      {
+        "id": "1699",
+        "title": "SG Petch, Belmont",
+        "project":"Car Showroom & Workshop",
+        "site":"New Ferens Park, Belmont, Durham City",
+        "la":"Durham County Council",
+        "text": `
+        Due to the success of the initial flagship car showroom to the south of this site, an additional car franchise also wanted to be located in this area. Therefore, a second car showroom was constructed following successful planning and building regulation applications.
+          <br /><br />
+          As a result of PlanArch’s involvement, the area has undergone significant changes and development of which this two storey car showroom is just one addition. The design forges an association with the main dealership via a vehicular access route. The external materials enhance the modern design by using a smooth silver metallic wall and roof systems. The large areas of curtain walling and internal double height spaces create this dynamically shaped and contemporary building, which clearly reflects its intended use. 
+        `,
+        "image": "1699 - 02.JPG",
+        "images": ["1699 - 01.JPG","1699 - 02.JPG","1699 - 03.JPG","1699 - 04.JPG"]
+      },
+      {
+        "id": "1733",
+        "title": "SG PETCH, Middlesbrough",
+        "project":"Extension to car showroom & workshop",
+        "site":"Skippers Lane Industrial Estate, Middlesbrough",
+        "la":"Redcar and Cleveland Borough Council",
+        "text": `
+        An established name in the northern-eastern car market, the client required an extension to its Middlesbrough showroom.
+          <br /><br />
+          The single storey extension provides some 132m2 of additional ground floor space, providing the building with extended workshop and car sales areas and space for a parts store.  The new extension replicates the existing elevations with matching materials being used providing the client with increased car showroom floor space and new service bays without compromising manoeuvrability around the building.
+        `,
+        "image": "1733-01.JPG",
+        "images": ["1733-01.JPG","1733-02.JPG","1733-03.JPG","1733-05.JPG","1733-06.JPG"]
+      },
+      {
+        "id": "1758",
+        "title": "P Scott",
+        "project":"Refurbishment of existing shop and new apartment above",
+        "site":"Barnard Castle, Bishop Auckland",
+        "la":"Durham County Council",
+        "text": `
+        The client required the existing shop to be refurbished with a new dwelling to be created to the floors above which was to be accessed at the rear of the property. By utilising the roofspace it was possible to create a three bedroom dwelling in the centre of Barnard Castle, the overall property now being in active use.
+        `,
+        "image": "1758-1.JPG",
+        "images": ["1758-1.JPG","1758-2.JPG","1758-3.JPG","1758-4.JPG"]
+      },
+      {
+        "id": "1325-b",
+        "title": "Brambledown Landscapes - pahse 2",
+        "project":"Extension to cafeteria at Poplar Tree Garden Centre",
+        "site":"Shincliffe, Durham",
+        "la":"Durham County Council",
+        "text": `
+        The works consisted of creating an increased floor space to double the original size of the cafeteria at Poplar Tree Garden Centre as a result of the overwhelming success of what has turned out to be the first phase of the project. The extension has replicated the original and therefore was constructed using a timber building which was an off the shelf construction by WS Hodgson with adaptations made by PlanArch Design Ltd with regard to the internal design.
+        `,
+        "image": "01.JPG",
+        "images": ["01.JPG","02.JPG","03.JPG","04.JPG","05.JPG","06.JPG"]
+      },
+      {
+        "id": "PO62",
+        "title": "Fryer Tuck",
+        "project":"Proposed hot food takeaway",
+        "site":"Barnard Castle, Bishop Auckland",
+        "la":"Durham County Council",
+        "text": `
+        The project involved obtaining planning permission for a change in Use Class from Class A1 to Class A5, located in the centre of Barnard Castle. The building was unoccupied but had been recently refurbished. Whilst the building was not listed it was in a Conservation Area. The proposed extraction from the plant equipment had to be carefully considered as well as the proposed signage. The building now provides floorspace for a successful fish and chip shop. 
+        `,
+        "image": "IMG_3931.JPG",
+        "images": ["IMG_3930.JPG","IMG_3931.JPG","IMG_3933.JPG","IMG_3935.JPG"]
+      }
     ]
   }, 
   {
