@@ -31,6 +31,7 @@
     flex-direction: column;
     .page-small-cards {
         //border: solid 1px blue;
+
         .small-card{
             width: auto;
         }
@@ -40,6 +41,27 @@
         .small-card{
             width: 100%;
             margin: 0;
+        }
+    }
+    .small-card{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        &__icon,&__title,&__content{
+            height: auto;
+            display: flex;
+            flex: grow;
+            justify-content: center;
+            //border: solid 1px red;
+        }
+        &__icon{
+            margin-bottom: 5px;
+        }
+        &__title{
+            margin-bottom: 5px;
+        }
+        &__content{
+            //margin-bottom: $padding-small;
         }
     }
 }
@@ -58,7 +80,7 @@
     flex-grow: 1;
     padding: $padding-large;
     width: 100%;
-    margin: $padding-small;;
+    margin: $padding-small;
     height: 160px;
     display: flex;
     flex-direction: column;
