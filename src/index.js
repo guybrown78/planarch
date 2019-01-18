@@ -1,3 +1,5 @@
+
+//
 import style from "./_scss/main.scss";
 import navigation from './js/navigation';
 import projectsCategory from './js/projectsCategory';
@@ -5,9 +7,9 @@ import projectItem from './js/projectItem';
 import aboutPage from './js/aboutPage';
 import contactPage from './js/contactPage';
 import guidePage from './js/guidePage';
-//
+import newsFeed from './js/newsFeed'
 import smoothscroll from 'smoothscroll-polyfill';
- 
+//
 function init() {
 	// initialise js
 	const nav = new navigation();
@@ -39,6 +41,13 @@ function init() {
 	// 
 	// actions dependant on currentPath
 	let currentPageScript = null;
+
+	if(currentPath === "index"){
+		// add indexPage scripts
+		currentPageScript = new newsFeed();
+		return;
+	}
+
 	if(currentPath === "projects-category"){
 		// add projects-category scripts
 		currentPageScript = new projectsCategory();
@@ -64,6 +73,7 @@ function init() {
 		currentPageScript = new guidePage();
 		return;
 	}
+
 }
 
 if (window.NodeList && !NodeList.prototype.forEach) {

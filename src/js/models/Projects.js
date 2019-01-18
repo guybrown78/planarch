@@ -157,6 +157,91 @@ const ProjectsData = [
     "displayName": "Residential Development",
     "cards": [
       {
+        "id": "1028",
+        "title": "Thorngate",
+        "project":"Housing development",
+        "site":"Thorngate, Barnard Castle",
+        "la":"Durham County Council",
+        "text": `
+        This housing development at Thorngate, Barnard Castle for Carlbury Developments Ltd, comprises 32 dwellings; including a three unit conversion of a Grade II listed building,  four new build apartments/ maisonettes and twenty five new build houses offering varying levels of accommodation. 
+        <br /><br />
+        The development required the demolition of a former industrial building to create this exclusive, riverfront development situated on the banks of the River Tees and offering extensive views of the surrounding countryside. 
+        <br /><br />
+        It was important that the architectural features from the surrounding Conservation Area were acknowledged and the size and scale of nearby buildings were complemented. Traditional materials such as random stone walls, timber sash windows, natural stone surrounds and reclaimed natural slate were used throughout the development.
+         The new build units range from two storey housing to four storey town houses using a combination of seven house types. 
+        <br /><br />
+        The listed building conversion has been carefully restored and sympathetically treated whilst enabling the client to maximise the potential of the building. Architectural features were retained or reinstated in order to maintain the integrity of this historic building located in the heart of a Conservation Area. The conversion consists of three separate dwellings with three/ four bedrooms to the ground floor with an open plan living area to the lower ground floor. The location of the listed building takes full advantage of the picturesque views overlooking the adjacent River Tees
+        <br /><br />
+        The apartments include two apartments comprising two bedrooms as well as two maisonettes comprising three bedrooms. 
+        <br /><br />
+        This scheme was shortlisted in the RICS Renaissance Awards 2009
+        `,
+        "image": "1028-1.JPG",
+        "images": ["1028-1.JPG","1028-2.JPG","1028-3.JPG","1028-4.JPG","1028-5.JPG"]
+      },
+      {
+        "id": "1187",
+        "title": "Chilton Lane School",
+        "project":"Housing development",
+        "site":"Chilton Lane School, Chilton, Ferryhill",
+        "la":"Durham County Council",
+        "text": `
+        The project required the demolition of the former Chilton Primary School in order to create a residential development for Hall Construction Ltd. The brief was to provide affordable ‘starter’ type homes whilst maximising the number of units on the site. The client placed emphasis on build-ability using traditional robust materials such as brick to the outerleaf, block walls for the internal structure and slate for the roof finish. 
+        <br /><br />
+        The response was to create twenty one plots using a combination of two house types. These ‘linked detached properties’ consisting of two/ three bedrooms were limited to two storeys in order to complement the surroundings as well as reduce construction costs.
+        `,
+        "image": "1187 photo 1.JPG",
+        "images": ["1187 photo 1.JPG","1187 photo 2.JPG","1187 photo 3.JPG","1187 photo 4.JPG"]
+      },
+      {
+        "id": "",
+        "title": "",
+        "project":"",
+        "site":"",
+        "la":"",
+        "text": `
+          
+          <br /><br />
+          
+          <br /><br />
+          
+        `,
+        "image": "",
+        "images": ["","","",""]
+      },
+      {
+        "id": "",
+        "title": "",
+        "project":"",
+        "site":"",
+        "la":"",
+        "text": `
+          
+          <br /><br />
+          
+          <br /><br />
+          
+        `,
+        "image": "",
+        "images": ["","","",""]
+      },
+      {
+        "id": "",
+        "title": "",
+        "project":"",
+        "site":"",
+        "la":"",
+        "text": `
+          
+          <br /><br />
+          
+          <br /><br />
+          
+        `,
+        "image": "",
+        "images": ["","","",""]
+      },
+      {
         "id": "1498",
         "title": "Carlton",
         "project":"Housing development",
@@ -184,6 +269,38 @@ const ProjectsData = [
         `,
         "image": "1504 photo 1.jpg",
         "images": ["1504 photo 1.jpg","1504 photo 2.JPG","1504 photo 3.JPG","1504 photo 4.JPG","1504 photo 5.JPG"]
+      },
+      {
+        "id": "",
+        "title": "",
+        "project":"",
+        "site":"",
+        "la":"",
+        "text": `
+          
+          <br /><br />
+          
+          <br /><br />
+          
+        `,
+        "image": "",
+        "images": ["","","",""]
+      },
+      {
+        "id": "",
+        "title": "",
+        "project":"",
+        "site":"",
+        "la":"",
+        "text": `
+          
+          <br /><br />
+          
+          <br /><br />
+          
+        `,
+        "image": "",
+        "images": ["","","",""]
       },
       {
         "id": "",

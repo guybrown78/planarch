@@ -59,6 +59,9 @@ const html = {
 	}]
 };
 module.exports = {
+	// node: {
+	// 	fs: 'empty'
+	// },
 	module: {
 		rules: [js,
 			html,
