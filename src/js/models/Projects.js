@@ -145,12 +145,88 @@ const ProjectsData = [
   {
     "category": "conversions",
     "displayName": "Conversions",
-    "cards": []
+    "cards": [
+      {
+        "id": "1633",
+        "title": "Heather Hall",
+        "project":"Conversion of redundant farm outbuildings and erection of extension to create a new dwelling",
+        "site":"Downland Farm, Bishopton",
+        "la":"Darlington Borough Council",
+        "text": `
+        The development was for a single new dwelling formed from existing outbuildings at Downland Farm.  The majority of the proposed dwelling is formed from existing buildings, the appearance and materials were dictated by what is available and in existence. The new roofs are pitched with clay pantiles to reflect adjacent buildings. Externally, walls are a mixture of rendered, painted surfaces and natural stone rubble walls. Windows are timber painted white, again as on adjacent structures.
+        `,
+        "image": "1633-1.JPG",
+        "images": ["1633-1.JPG","1633-2.JPG","1633-3.JPG","1633-4.JPG","1633-5.JPG"]
+      },
+      {
+        "id": "1682",
+        "title": "Public House Conversion",
+        "project":"Conversion of public house to dwelling",
+        "site":" Brandon Village, Co Durham",
+        "la":"Durham County Council",
+        "text": `
+        The former public house had stood closed for two years, but was regarded by the local planning authority as  being of historic interest and in a prominent position in the Conservation Area, and therefore worthy of retention. A conversion scheme has been undertaken to provide a six bedroom dwelling which retains a significant presence in the heart of the village. The development also included a new build dwelling in the disused land surrounding the redundant public house, which was design to be subservient to the former pub.
+ <br /><br />
+        Alterations were kept to a minimum both internally and externally; however, the client’s requirements were fully met. The conversion of the building is not only sympathetic to the host building, but also respectful of the Conservation Area in preserving and enhancing its general quality.
+        `,
+        "image": "P1682-01.JPG",
+        "images": ["P1682-01.JPG","P1682-02.JPG","P1682-03.JPG","P1682-04.JPG","P1682-05.JPG","P1682-06.JPG","P1682-07.JPG"]
+      },
+      {
+        "id": "",
+        "title": "",
+        "project":"",
+        "site":"",
+        "la":"",
+        "text": `
+          
+          <br /><br />
+          
+          <br /><br />
+          
+        `,
+        "image": "",
+        "images": ["","","",""]
+      }
+    ]
   },
   {
     "category": "future",
     "displayName": "Future Projects",
-    "cards": []
+    "cards": [
+      {
+        "id": "",
+        "title": "",
+        "project":"",
+        "site":"",
+        "la":"",
+        "text": `
+          
+          <br /><br />
+          
+          <br /><br />
+          
+        `,
+        "image": "",
+        "images": ["","","",""]
+      },
+      {
+        "id": "",
+        "title": "",
+        "project":"",
+        "site":"",
+        "la":"",
+        "text": `
+          
+          <br /><br />
+          
+          <br /><br />
+          
+        `,
+        "image": "",
+        "images": ["","","",""]
+      }
+    ]
   },
   {
     "category": "residential-development",
@@ -194,52 +270,41 @@ const ProjectsData = [
         "images": ["1187 photo 1.JPG","1187 photo 2.JPG","1187 photo 3.JPG","1187 photo 4.JPG"]
       },
       {
-        "id": "",
-        "title": "",
-        "project":"",
-        "site":"",
-        "la":"",
-        "text": `
-          
-          <br /><br />
-          
-          <br /><br />
-          
-        `,
-        "image": "",
-        "images": ["","","",""]
+        "id": "1180", "title":"The Leazes","project":"Conversion of former school buildings and five new dwellings", "site":"The Leazes, Wolsingham","la":"Durham County Council","text": `This project is a conversion of a former school annex building into four luxury apartments and the development in its grounds of five new detached dwellings and two converted buildings, and because of the quality and sensitivity of the site, careful negotiations were required with the local planning authority.      <br /><br /> The grounds to The Leazes are extensive and it was decided that as it was attractively landscaped and heavily treed, five large new detached dwellings could be built without losing the feeling of space and landscape quality within the site. These new dwellings have their own private gardens within the grounds and were designed to be sympathetic to the existing Leazes House, reproducing many of the original architectural features.  <br /><br />Adjacent to Leazes House is a former annex building. This was extended to form a converted detached dwelling with its own garden and amenity space.<br /><br />The final piece in the Leazes jigsaw is the Lodge which is situated at the entrance gates to the grounds. This small but attractive unit has been converted and extended to form another detached property with its own gardens. A detached garage completes the Lodge’s facilities. <br /><br />The boundaries to the site and the private gardens have been completed with hedges, park fencing and stone walls culminating in a very attractive and exclusive development of private dwellings.`,
+        "image": "1180 photo 1.JPG",
+        "images": ["1180 photo 1.JPG","1180 photo 2.JPG","1180 photo 3.JPG","1180 photo 4.JPG"]
       },
       {
-        "id": "",
-        "title": "",
-        "project":"",
-        "site":"",
-        "la":"",
+        "id": "1304",
+        "title": "Westerton",
+        "project":"Residential development of 8no. dwellings at former farm yard and haulage depot",
+        "site":"Westerton, Bishop Auckland",
+        "la":"Durham County Council",
         "text": `
-          
-          <br /><br />
-          
-          <br /><br />
-          
+        The properties were designed to be individual units while complementing and relating to one another and those around them on what is a challenging site. A number of influential architectural styles along with local focal points within Westerton Village were employed in designing the dwellings, as well a the superb long range views available dictating layouts and internal arrangements.
+        <br /><br />
+        Seven of the properties are unique in their own design and are detached and substantial in size with their own gardens and garaging. A variety of materials have been used from natural stone to rendered surfaces for walls and natural slate to pantiles for roofs to create a variety of elevations.  
+        <br /><br />
+        The remaining two units are semi-detached brick built dwellings which front onto the road that passes through Westerton Village, designed to be more in keeping with the existing properties adjacent to the site.
+        <br /><br />
+        The boundaries to the site and individual plots are a mixture of stone and brick walls presenting a feeling of enclosure within the site, whilst intricately linking the individual plots to one other to create a cohesive development.
         `,
-        "image": "",
-        "images": ["","","",""]
+        "image": "1304 photo 1.JPG",
+        "images": ["1304 photo 1.JPG","1304 photo 2.JPG","1304 photo 3.JPG","1304 photo 4.JPG","1304 photo 5.JPG","1304 photo 6.JPG","1304 photo 7.JPG","1304 photo 8.JPG","1304 photo 9.JPG"]
       },
       {
-        "id": "",
-        "title": "",
-        "project":"",
-        "site":"",
-        "la":"",
+        "id": "1388",
+        "title": "The Old School",
+        "project":"Housing development",
+        "site":"The Old School, Broompark",
+        "la":"Durham County Council",
         "text": `
-          
-          <br /><br />
-          
-          <br /><br />
-          
+        The scheme included the demolition of a former school which was being used as a scaffolder’s yard and the erection of three single detached dwellings and one ‘gatehouse’ block containing five luxury apartments. The confined area of approximately 1700 square metres has been designed in order to maximise the site whilst being sympathetic to its environment. The location of the site posed major constraints as existing dwellings surrounded it. Therefore, the internal layouts and the position of each building sought to avoid overlooking adjacent dwellings.
+<br /><br />
+        Two house types were used to produce three units including a spacious five bedroom unit utilising the roof space and a split level design, and a five bedroom town house. The five two bedrooms apartments in the gatehouse block complete this intricate development.
         `,
-        "image": "",
-        "images": ["","","",""]
+        "image": "1388-01.JPG",
+        "images": ["1388-01.JPG","1388-02.JPG","1388-04.JPG","1388-06.JPG","1388-07.JPG"]
       },
       {
         "id": "1498",
@@ -271,52 +336,42 @@ const ProjectsData = [
         "images": ["1504 photo 1.jpg","1504 photo 2.JPG","1504 photo 3.JPG","1504 photo 4.JPG","1504 photo 5.JPG"]
       },
       {
-        "id": "",
-        "title": "",
-        "project":"",
-        "site":"",
-        "la":"",
+        "id": "1564",
+        "title": "Princess Street",
+        "project":"7no. apartments",
+        "site":"18 Princes Street, Bishop Auckland, County Durham",
+        "la":"Durham County Council",
         "text": `
-          
-          <br /><br />
-          
-          <br /><br />
-          
+        The site comprised an existing dwelling with an unused area of land adjacent to Princes Street, Bishop Auckland.  The existing dwelling was unoccupied and in a dangerous structural condition. The project required the demolition of the existing building together with a rear boundary wall to allow the construction of 7no. apartments and a new retaining wall. The compact site had to be fully maximised in order to make the scheme financially viable for the client.  
+<br /><br />
+        The design of the proposed building reflects that of the existing adjacent Victorian terrace, with many features such as the bay windows, stone heads and cills as well as brick detailing incorporated into the proposed design. It was important that the building did not appear as one mass; therefore, there are three steps in the roof line to ensure the stepped character of the street is maintained. 
+        <br /><br />
+        The new building has two storeys with habitable spaces within the pitched roof accommodating five spacious single bedroom apartments with open plan living areas and two apartments with two bedrooms.
         `,
-        "image": "",
-        "images": ["","","",""]
+        "image": "1564-1.JPG",
+        "images": ["1564-1.JPG","1564-2.JPG","1564-3.JPG","1564-4.JPG"]
       },
       {
-        "id": "",
-        "title": "",
-        "project":"",
-        "site":"",
-        "la":"",
+        "id": "1669",
+        "title": "103 to 105 Gilesgate",
+        "project":"New build development and refurbishment of existing buildings.",
+        "site":"103 to 105 Gilesgate, Durham ",
+        "la":"urham County Council",
         "text": `
-          
-          <br /><br />
-          
-          <br /><br />
-          
+        Previously a bathroom showroom, this property, which is Grade II Listed, has been restored and converted to provide residential apartments with a small retail unit. Opportunity was taken to also develop further apartments via an extension and linked new build to the rear, enjoying private gardens, in a location close to the centre of the City of Durham.
         `,
-        "image": "",
-        "images": ["","","",""]
+        "image": "1669-01.JPG",
+        "images": ["1669-01.JPG","1669-02.JPG","1669-03.JPG","1669-04.JPG"]
       },
       {
-        "id": "",
-        "title": "",
-        "project":"",
-        "site":"",
-        "la":"",
-        "text": `
-          
-          <br /><br />
-          
-          <br /><br />
-          
-        `,
-        "image": "",
-        "images": ["","","",""]
+        "id": "0001",
+        "title": "Lydgate Lane",
+        "project":"Housing Development",
+        "site":"Lydgate Lane",
+        "la":"N/A",
+        "text": ``,
+        "image": "IMG_3702.JPG",
+        "images": ["IMG_3700.JPG","IMG_3701.JPG","IMG_3702.JPG","IMG_3703.JPG","IMG_3704.JPG","IMG_3706.JPG"]
       }
     ]
   },
