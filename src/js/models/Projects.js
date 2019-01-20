@@ -173,60 +173,55 @@ const ProjectsData = [
         "images": ["P1682-01.JPG","P1682-02.JPG","P1682-03.JPG","P1682-04.JPG","P1682-05.JPG","P1682-06.JPG","P1682-07.JPG"]
       },
       {
-        "id": "",
-        "title": "",
-        "project":"",
-        "site":"",
-        "la":"",
+        "id": "P101",
+        "title": "Farmhouse and barn conversion",
+        "project":"Conversion of redundant farmhouse and barn",
+        "site":"High Shittlehopeburn, Stanhope",
+        "la":"Durham County Council",
         "text": `
-          
-          <br /><br />
-          
-          <br /><br />
-          
+        The development at High Shittlehopeburn Farm, near Stanhope in Weardale, Co. Durham was completed in 2015 providing a dwelling for the client and his parents.  The site had two buildings which contained an abandoned farmhouse of historic importance and barn adjacent, which were both converted to provide two family homes. Extensive structural works were required to the farm house in order to prevent it collapsing initially and to ensure that the building was capable of being safely utilised. 
+ <br /><br />
+        Several extensions were added to the side and rear of the property, which provided a sunroom, home office, vertical circulation to the utilised roof space that created additional habitable space. The setting of the site is exceptional and the conversion schemes have improved the site and its surroundings and the entrance into Stanhope.
         `,
-        "image": "",
-        "images": ["","","",""]
-      }
-    ]
-  },
-  {
-    "category": "future",
-    "displayName": "Future Projects",
-    "cards": [
-      {
-        "id": "",
-        "title": "",
-        "project":"",
-        "site":"",
-        "la":"",
-        "text": `
-          
-          <br /><br />
-          
-          <br /><br />
-          
-        `,
-        "image": "",
-        "images": ["","","",""]
+        "image": "P101-01.JPG",
+        "images": ["P101-01.JPG","P101-02.JPG","P101-03.JPG","P101-04.JPG","P101-05.JPG","P101-06.jpg","P101-07.jpg"]
       },
       {
-        "id": "",
-        "title": "",
-        "project":"",
-        "site":"",
-        "la":"",
+        "id": "P109",
+        "title": "Granary conversion",
+        "project":"Conversion & extension of granary building",
+        "site":"West Roods Farm, Boldron, nr Barnard Castle",
+        "la":"Durham County Council",
         "text": `
-          
-          <br /><br />
-          
-          <br /><br />
-          
-        `,
-        "image": "",
-        "images": ["","","",""]
+        The client’s objective was to convert and extend the granary building which formed part of the existing steading into habitable accommodation for a family member to be able to live semi-independently but with an element of family care and security. The scheme proposed and constructed successfully achieves this whilst being sympathetic to the existing building.`,
+        "image": "P109-04.JPG",
+        "images": ["P109-01.JPG","P109-02.JPG","P109-03.JPG","P109-04.JPG"]
+      },
+      {
+        "id": "P124",
+        "title": "Storage to residential conversion",
+        "project":"Conversion of existing commercial/storage building to residential use",
+        "site":"Queens Street, Barnard Castle",
+        "la":"Durham County Council",
+        "text": `
+        The existing building is located in the Conservation Area of Barnard Castle at the junction of Queens Street and Birch Road, being a three storey building constructed in random rubble to the outerleaf and which was used as storage to the upper floors and a joinery to the ground floor, but previously being a mill or a warehouse. 
+        <br /><br />
+        The building was converted to provide three dwellings with two bedrooms with one unit being located on each floor. The external alterations were kept to a minimum and the existing structural openings were utilised with only one additional window being required.`,
+        "image": "P124-01.JPG",
+        "images": ["P124-01.JPG","P124-02.JPG","P124-03.jpeg"]
+      },
+      {
+        "id": "P146",
+        "title": "Residential conversion",
+        "project":"Residential conversion",
+        "site":"North East",
+        "la":"N/A",
+        "text": ``,
+        "image": "P146-05.jpg",
+        "images": ["P146-02.JPG","P146-03.JPG","P146-04.jpg","P146-05.jpg","P146-06.jpg","P146-07.JPG"]
       }
     ]
+    
   },
   {
     "category": "residential-development",
@@ -378,7 +373,180 @@ const ProjectsData = [
   {
     "category": "bespoke-dwellings",
     "displayName": "Bespoke Dwellings",
-    "cards": []
+    "cards": [
+      {
+        "id": "1149",
+        "title": "Fishburn Airfield",
+        "project":"Single detached dwelling",
+        "site":"Fishburn Airfield, West House Farm, Fishburn",
+        "la":"Durham County Council",
+        "text": `
+        The rural style and scale of the new build dormer bungalow were in accordance with the constraints outlined by the local planning authority. This two bedroom, open plan dwelling received considerable input from the client, and it also has the option of utilising the roof space thereby creating an additional storey for future development. 
+        `,
+        "image": "1149 photo 1.JPG",
+        "images": ["1149 photo 1.JPG","1149 photo 3.JPG","1149 photo 4.JPG","1149 photo 5.JPG","1149 photo 6.JPG"]
+      },
+      {
+        "id": "1366",
+        "title": "Dene Hall Drive",
+        "project":"Single detached dwelling",
+        "site":"Land at 16 Dene Hall Drive, Bishop Auckland ",
+        "la":"Durham County Council",
+        "text": `
+        Full planning permission was obtained for a four bedroom dormer bungalow on land to the rear of an existing dwelling on an established housing development, the land forming part of the curtilage of the parent dwelling, and being formerly used as an orchard. 
+<br /><br />
+        The proposed building is designed to reflect the details of the surrounding dwellings which have their own unique characteristics whilst respecting the privacy and amenity of neighbouring properties.  
+        `,
+        "image": "1366-01.jpg",
+        "images": ["1366-01.jpg","1366-02.JPG","1366-04.jpg"]
+      },
+      {
+        "id": "1377",
+        "title": "Tindale",
+        "project":"Luxury detached dwelling.",
+        "site":"Tindale, Bishop Auckland.",
+        "la":"Durham County Council",
+        "text": `
+        The client’s first instruction was to develop a concept based on house styles in the South of France and Florida, and an early decision was made to create a design with the Art Deco movement in mind.
+        <br /><br />
+        The client had specific the requirements for the house and it was determined that the five bedrooms were to be suites with dressing areas, seating and en-suite facilities. Three suites were required for his children along with a guest suite for visitors. The final and largest suite was required for the client and ultimately this became a penthouse suite. All suites were to have balconies.
+        <br /><br />
+        General living accommodation was to comprise a large lounge and a large kitchen with its own dining area. It was important to the client that the kitchen was large enough to be a communal area for the family to gather at mornings and evenings when all the family members were together. A large lobby area, laundry room, utility and a lift to all floors as well as a feature staircase would also be required. A large area of the dwelling was to be given over to an entertainment suite. This was to have a swimming pool, changing facilities, sauna, seating area, gymnasium equipment, bar, dance floor and cinema screen. Externally there were to be three double garages, a badminton court and extensive landscaped gardens.
+        `,
+        "image": "1377 photo 1.jpg",
+        "images": ["1377 photo 1.jpg","1377 photo 2.jpg","1377 photo 4.jpg","1377 photo 5.JPG"]
+      },
+      {
+        "id": "1616",
+        "title": "Mee",
+        "project":"Single detached dwelling",
+        "site":"Land at Woodlea, Nr Lanchester",
+        "la":"Durham County Council",
+        "text": `
+        Full planning permission was obtained for a two bedroom cottage on land at Woodlea, near Lanchester after an extensive planning process, which was approved on appeal. The project involved the demolition of a small Edwardian timber lodge in order to accommodate the proposed new build dwelling.
+        <br /><br />
+        Due to the original planning constraints the scale of the property was quite modest; however, successful extensions were added to the newly built property – the last being a green oak structure which provides the clients with a property which meets their original aspirations for the site, and which is detailed in the section on extensions.
+        `,
+        "image": "1616-04.JPG",
+        "images": ["1616-01.JPG","1616-02.JPG","1616-03.JPG","1616-04.JPG"]
+      },
+      {
+        "id": "1632",
+        "title": "Front Street",
+        "project":"Detached dwelling",
+        "site":"Land to rear of Front Street, Wolsingham",
+        "la":"Durham County Council",
+        "text": `
+        This former site of garaging has been transformed into a new, attractive 4 bedroomed dwelling. The derelict garages were demolished and the site boundary walls rebuilt to create an open site on which to build. 
+        <br /><br />
+        The new dwelling is in a Conservation Area and pre application discussions with the Durham County Conservation Officer took place to determine an acceptable design for all concerned. 
+        <br /><br />
+        The property is constructed from natural stonework with dressed surrounds to windows and doors. A blue slate roof with water table feature gives a sympathetic structure which assimilates well with the existing adjacent dwellings.
+        <br /><br />
+        The new windows are upvc manufactured to a very high standard. Sliding sash in design, they were approved by the planning department despite being in the Conservation Area where upvc is often resisted. 
+        <br /><br />
+        The new dwelling has been constructed by a local builder who clearly takes great pride in his work. The constraints offered by this infill site have been overcome and the result is a house of character which meets client’s requirements whilst also being an asset in the Conservation Area. 
+       `,
+        "image": "1632-1.JPG",
+        "images": ["1632-1.JPG","1632-2.JPG"]
+      },
+      {
+        "id": "",
+        "title": "",
+        "project":"",
+        "site":"",
+        "la":"",
+        "text": `
+          
+          <br /><br />
+          
+          <br /><br />
+          
+        `,
+        "image": "",
+        "images": ["","","",""]
+      },
+      {
+        "id": "",
+        "title": "",
+        "project":"",
+        "site":"",
+        "la":"",
+        "text": `
+          
+          <br /><br />
+          
+          <br /><br />
+          
+        `,
+        "image": "",
+        "images": ["","","",""]
+      },
+      {
+        "id": "",
+        "title": "",
+        "project":"",
+        "site":"",
+        "la":"",
+        "text": `
+          
+          <br /><br />
+          
+          <br /><br />
+          
+        `,
+        "image": "",
+        "images": ["","","",""]
+      },
+      {
+        "id": "",
+        "title": "",
+        "project":"",
+        "site":"",
+        "la":"",
+        "text": `
+          
+          <br /><br />
+          
+          <br /><br />
+          
+        `,
+        "image": "",
+        "images": ["","","",""]
+      },
+      {
+        "id": "",
+        "title": "",
+        "project":"",
+        "site":"",
+        "la":"",
+        "text": `
+          
+          <br /><br />
+          
+          <br /><br />
+          
+        `,
+        "image": "",
+        "images": ["","","",""]
+      },
+      {
+        "id": "",
+        "title": "",
+        "project":"",
+        "site":"",
+        "la":"",
+        "text": `
+          
+          <br /><br />
+          
+          <br /><br />
+          
+        `,
+        "image": "",
+        "images": ["","","",""]
+      }
+    ]
   },
   {
     "category": "extensions",
@@ -390,7 +558,44 @@ const ProjectsData = [
     "displayName": "Community & Education",
     "cards": []
   },
+  {
+    "category": "future",
+    "displayName": "Future Projects",
+    "cards": [
+      {
+        "id": "",
+        "title": "",
+        "project":"",
+        "site":"",
+        "la":"",
+        "text": `
+          
+          <br /><br />
+          
+          <br /><br />
+          
+        `,
+        "image": "",
+        "images": ["","","",""]
+      },
+      {
+        "id": "",
+        "title": "",
+        "project":"",
+        "site":"",
+        "la":"",
+        "text": `
+          
+          <br /><br />
+          
+          <br /><br />
+          
+        `,
+        "image": "",
+        "images": ["","","",""]
+      }
+    ]
+  }
 ];
-
 
 export default ProjectsData;
