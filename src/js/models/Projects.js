@@ -507,7 +507,7 @@ const ProjectsData = [
       },
       {
         "id": "P080",
-        "title": "ow Fields Farm",
+        "title": "Low Fields Farm",
         "project":"Single detached dwelling",
         "site":"Land at Low Fields Farm, Eggleston",
         "la":"Durham County Council",
@@ -524,7 +524,157 @@ const ProjectsData = [
   {
     "category": "extensions",
     "displayName": "Extensions",
-    "cards": []
+    "cards": [
+      {
+        "id": "1587",
+        "title": "Lutterington Hall",
+        "project":" New office and garage",
+        "site":"Lutterington Hall, West Auckland, Co Durham",
+        "la":"Durham County Council",
+        "text": `
+        Out of previous work by PlanArch Design, the owners of Lutterington Hall have developed the property over the years into the attractive family home it is today. 
+        <br /><br />
+        The hall itself has been extended to create a more attractive living space and a large garage block has been added adjacent to the house. 
+        <br /><br />
+        A new stone built stable block has been added for the family horses along with a manege beside it for training purposes. 
+        <br /><br />
+        The most recent development is a new office for the client from which to run his business. Extensive landscaping has resulted in a very attractive property meeting the client’s expectations.
+        `,
+        "image": "1587-01.JPG",
+        "images": ["1587-01.JPG","1587-02.JPG","1587-03.JPG","1587-04.JPG","1587-05.JPG","1587-06.JPG"]
+      },
+      {
+        "id": "1621",
+        "title": "The Old Vicarage",
+        "project":"Orangery",
+        "site":"The Old Vicarage, Barnard Castle",
+        "la":"Durham County Council",
+        "text": `
+        The client previously owned The Old Vicarage on Newgate in Barnard Castle, a Grade II Listed Building. 
+        <br /><br />
+        The brief was to provide a new orangery at the south west side of the vicarage adjoining the existing kitchen. The former vicarage dates from the Victorian era and has many interesting features which were considered in the design of the new orangery. 
+        <br /><br />
+        The new structure needed to have its own identity whilst being sympathetic in design to The Old Vicarage. The existing house windows have dressed stone, twice splayed jambs with mullions and transoms, lightly tooled to complete this attractive feature. This was adopted into the design of the orangery along with splayed plinth courses and a decorative cornice. The ballustrading takes its form from a detail at high level on the existing chimney stacks. 
+        <br /><br />
+        The orangery required substantial foundations, owing to the proximity of nearby trees, and a steel frame internally to support the stonework and the lantern rooflights. A dressed leaded roof completed the structure along with handmade windows and doors with a lancet arch detail. 
+        <br /><br />
+        The new orangery received a commendation in the Stone Federation of Great Britain’s Natural Stone Awards 2010 for traditional style stone masonry.
+        `,
+        "image": "1621-1.JPG",
+        "images": ["1621-1.JPG","1621-2.JPG","1621-3.JPG","1621-5.JPG"]
+      },
+      {
+        "id": "1648",
+        "title": "The Dell",
+        "project":"Extension to existing dwelling, Bishop Auckland",
+        "site":"The Dell",
+        "la":"Durham County Council",
+        "text": `
+        The development comprised the erection of a two storey extension to the east elevation of 16 The Dell, Bishop Auckland. The proposed layout of the extension is an increase in floor area to the kitchen at ground floor, and master bedroom at first floor which includes the creation of a dressing room. The proposed extension was built using a corresponding brick type to ensure a good colour and texture match. At ground floor, two elevations incorporate bi-folding doors which can be opened fully to take advantage of the patio area. A Juliet balcony was created at first floor with double doors which face south. To the east elevation at first floor, full height narrow windows were installed as a feature. All visible construction materials blend with those on the existing building.
+        `,
+        "image": "1648-01.JPG",
+        "images": ["1648-01.JPG","1648-02.JPG","1648-03.JPG","1648-04.JPG"]
+      },
+      {
+        "id": "1704",
+        "title": "Rogerley Hall",
+        "project":"Sunroom and first floor extension to existing dwelling.",
+        "site":"Rogerley Hall, Frosterley",
+        "la":"Durham County Council",
+        "text": `
+        The clients required that their existing family home be extended to the ground and first floor. A sunroom extension to the ground floor was constructed and an additional guest bedroom with ensuite to the first floor was also created. The existing master bedroom was renovated to include a shower room and a walk in dressing room. 
+        <br /><br />
+        Externally, an existing flat roof to a recently added first floor extension was removed as part of the proposals. The new first floor extension could then form a hipped roof that appeared to be contemporary with the existing building, eliminating the disjointed external appearance created by the two earlier extensions. 
+        <br /><br />
+        The sunroom was constructed using natural dressed stone columns whilst the first floor extension was constructed using natural stone to the outer leaf of the external walls as well as for the heads and cills to the structural openings in order to complement the existing dwelling. Bronze windows were used throughout the extensions and it is intended that the existing windows to the dwelling will be replaced in favour of bronze windows over time. Westmorland green natural slate was used for the roof finish as per the existing building.`,
+        "image": "1704-1.JPG",
+        "images": ["1704-1.JPG","1704-2.JPG","1704-3.JPG","1704-5.JPG"]
+      },
+      {
+        "id": "1737",
+        "title": "Rogerley Lodge",
+        "project":"Two storey extension to existing cottage.",
+        "site":"Rogerley Lodge, Frosterley",
+        "la":"Durham County Council",
+        "text": `Work was undertaken to demolish an existing unattractive single storey lean to extension to the existing cottage and build a new two storey extension.  The extension provides much needed additional floor space whilst also improving the external appearance of the building, the design and use of matching stonework being sympathetic to the cottage in its rural surroundings.`,
+        "image": "1737-01.JPG",
+        "images": ["1737-01.JPG","1737-02.JPG","1737-03.JPG","1737-04.JPG"]
+      },
+      {
+        "id": "P048",
+        "title": "Westbourne Grove",
+        "project":"Single storey extension to existing dwelling & garage conversion",
+        "site":"Westbourne Grove, Darlington",
+        "la":"Darlington Borough Council",
+        "text": `
+        The project consisted of providing a single storey extension to the rear of the property to create a large open plan living space, kitchen and dining area.  Additionally the conversion of an existing detached double garage was undertaken to provide further residential floorspace as an annex to the main dwelling.`,
+        "image": "P048-01.JPG",
+        "images": ["P048-01.JPG","P048-02.JPG","P048-03.JPG","P048-04.JPG"]
+      },
+      {
+        "id": "P075",
+        "title": "Faceby Manor",
+        "project":"Alterations and extension to Grade II Listed Building",
+        "site":"Faceby Manor, nr Stokesley, North Yorkshire",
+        "la":"North York Moors National Park Authority",
+        "text": `
+        The client purchased the grade II listed building near Stokesley in 2013. The project involved extending and renovating the property to meet her requirements internally for her new family home and to also revitalise the external façade of the building, to allow the building to reflect its listed status. 
+        <br /><br />
+        The project involved extensive internal and external alterations as well as several extensions whilst completely refurbish this existing manor house to its former glory. The stone built extensions were designed to be completely sympathetic to the existing building.`,
+        "image": "P075-01.JPG",
+        "images": ["P075-01.JPG","P075-02.JPG","P075-03.JPG","P075-04.JPG"]
+      },
+      {
+        "id": "P116",
+        "title": "Eastfield",
+        "project":"Loft Conversion and extension to an existing dwelling",
+        "site":"Eastfield, Low Newton By the Sea",
+        "la":"Northumberland County Council",
+        "text": `
+        The applicant wished to convert the loft space and extend an existing single storey dwelling located to the eastern edge of the village of Low Newton By The Sea.  The dwelling is a semi-detached, single storey unit which had an existing hipped roof. The client’s objective was to add a side extension and utilise the roof space to provide additional habitable floor space and bedrooms. Dormer windows were also introduced to ensure that the exceptional views were incorporated within the design. The dwelling was also modified to be fully wheelchair accessible. An ASHP also helped create a more energy efficient building. `,
+        "image": "P116-01.JPG",
+        "images": ["P116-01.JPG","P116-02.JPG","P116-03.JPG","P116-04.JPG"]
+      },
+      {
+        "id": "P125",
+        "title": "Grasmere Avenue",
+        "project":"Single storey extension to existing dwelling",
+        "site":"Grasmere Avenue, West Auckland",
+        "la":"Durham County Council ",
+        "text": `
+        Work was completed in late 2015 to demolish an existing conservatory to the rear of the property and to construct a new single storey extension to provide open plan living space for the existing occupiers.  
+        <br /><br />
+        The extension replicated the materials of the existing dwelling. However, the full height glazing to the gable of the extension and the inclusion of several rooflights to the lean-to help create a light and airy living space, whilst the bifold doors, when open, connect the interior to the outside environment. 
+        `,
+        "image": "P125-01.JPG",
+        "images": ["P125-01.JPG","P125-02.JPG","P125-03.JPG","P125-04.JPG"]
+      },
+      {
+        "id": "P142",
+        "title": "Woodlea",
+        "project":"Green Oak extension to existing dwelling",
+        "site":"Land at Woodlea, Nr Lanchester",
+        "la":"Durham County Council",
+        "text": `Following full planning permission for a two bedroom cottage obtained by ourselves on land at Woodlea, near Lanchester, due to the original planning constraints the scale of the property was quite modest. Therefore, the clients wished to extend the existing building using a green oak structure which now provides them with a sunroom and a property that has met their aspirations which were advised at the start of what was a lengthy and complicated planning process. `,
+        "image": "P142-01.JPG",
+        "images": ["P142-01.JPG","P142-02.JPG","P142-03.JPG","P142-04.JPG"]
+      },
+      {
+        "id": "P175",
+        "title": "Poplar Tree Garden Centre",
+        "project":"Proposed extension and refurbishment of existing dwelling",
+        "site":"Poplar Tree Garden Centre",
+        "la":"Durham County Council",
+        "text": `
+        The site lies within the Conservation Area of Shincliffe village and the original dwelling is a traditional built building with Georgian sash windows and a slate roof finish, at least 150 years. The main body of the house is two storey but there is also a storey-and-a-half element that is currently used for storage. 
+        <br /><br />
+        However, the building was not of sufficient size to accommodate modern day living, and therefore, it was extended to the front and rear and the roof height to the side elevation was also raised. The existing lean-to structure to the front was demolished and extended to create a large double height entrance, whilst to the rear a stone orangery was added to create an open plan living/ kitchen/ dining area whilst retaining the existing lounge. Raising the roof of the existing side extension allowed a large additional master bedroom with a dressing area and ensuite to be created.
+        <br /><br />
+        The extensions were designed to retain the character of the existing building whilst providing a level of accommodation to provide family living.`,
+        "image": "P175-01.JPG",
+        "images": ["P175-01.JPG","P175-02.JPG","P175-04.JPG","P175-05.JPG","P175-06.JPG"]
+      }
+    ]
   },
   {
     "category": "community-education",
