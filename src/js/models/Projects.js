@@ -451,100 +451,73 @@ const ProjectsData = [
         "images": ["1632-1.JPG","1632-2.JPG"]
       },
       {
-        "id": "",
-        "title": "",
-        "project":"",
-        "site":"",
-        "la":"",
+        "id": "P023",
+        "title": "Rumby Hill Farm",
+        "project":"Demolition and rebuild of farmhouse and outbuildings",
+        "site":"Rumby Hill Farm, Crook",
+        "la":"Durham County Council",
         "text": `
-          
-          <br /><br />
-          
-          <br /><br />
-          
-        `,
-        "image": "",
-        "images": ["","","",""]
+        The project saw the redevelopment of a dilapidated farm steading on the outskirts of Crook.  The development involved the demolition of a semi-derelict farmhouse and range of buildings to be replaced by a traditionally designed dwelling to modern living standards. The replacement dwelling forms part of a group of buildings, including stables and storage buildings. The existing outbuildings and stables were rebuilt to a higher specification including a new garage block.`,
+        "image": "P023-03.JPG",
+        "images": ["P023-01.JPG","P023-02.JPG","P023-03.JPG","P023-04.JPG","P023-05.JPG"]
       },
       {
-        "id": "",
-        "title": "",
-        "project":"",
-        "site":"",
-        "la":"",
+        "id": "P027",
+        "title": "Brandon Village",
+        "project":"Detached dwelling",
+        "site":"Brandon Village, Co Durham",
+        "la":" Durham County Council",
         "text": `
-          
-          <br /><br />
-          
-          <br /><br />
-          
-        `,
-        "image": "",
-        "images": ["","","",""]
+        A new five bedroom dwelling constructed in a prominent location in a valued Conservation Area, providing the client with high quality living accommodation and attractive external private area taking advantage of views of Durham City. `,
+        "image": "P027-01.JPG",
+        "images": ["P027-01.JPG","P027-02.JPG","P027-03.JPG","P027-04.JPG","P027-05.JPG","P027-06.JPG"]
       },
       {
-        "id": "",
-        "title": "",
-        "project":"",
-        "site":"",
-        "la":"",
+        "id": "P047",
+        "title": "Quarry House Lane",
+        "project":"New build dwelling",
+        "site":"Quarry House Lane, Durham",
+        "la":"Durham County Council",
         "text": `
-          
-          <br /><br />
-          
-          <br /><br />
-          
-        `,
-        "image": "",
-        "images": ["","","",""]
+        The development at Quarry House Lane, near Neville’s Cross, Durham was completed in 2015 providing a dwelling for Mr & Mrs McLellan on a site within the Durham City Green Belt.  The clients purchased the site with the intention to create a highly energy efficient dwelling to replace the existing house which was of an unprepossessing and somewhat inappropriate suburban 1930’s design.  Rather than refurbish and extend the existing dwelling, which had a poor standard of accommodation, it was proposed to demolish and replace it with a house more appropriate to its surroundings in terms of design and materials, whilst meeting the specification and accommodation requirements of the clients.`,
+        "image": "P047-01.JPG",
+        "images": ["P047-01.JPG","P047-02.JPG","P047-03.JPG","P047-04.JPG","P047-05.JPG"]
       },
       {
-        "id": "",
-        "title": "",
-        "project":"",
-        "site":"",
-        "la":"",
+        "id": "P050",
+        "title": "Pinfold Lane",
+        "project":"Single detached bungalow",
+        "site":"Land at Pinfold Lane, Butterknowle",
+        "la":"Durham County Council",
         "text": `
-          
-          <br /><br />
-          
-          <br /><br />
-          
-        `,
-        "image": "",
-        "images": ["","","",""]
+        Full planning permission was obtained for a spacious two bedroom bungalow at Pinfold Lane, Butterknowle. The appearance of the bungalow is designed to reflect the vernacular architecture of its surroundings, using natural stone walls to the front and render for the remainder of the dwelling. Stone heads, cills and quoins were used as well as a natural blue slate roof finish. A sunroom to the rear of the property takes advantage of the great views on offer.`,
+        "image": "P050-01.JPG",
+        "images": ["P050-01.JPG","P050-02.JPG","P050-03.JPG","P050-04.JPG"]
       },
       {
-        "id": "",
-        "title": "",
-        "project":"",
-        "site":"",
-        "la":"",
+        "id": "P070",
+        "title": "Wear Chare",
+        "project":"New Build Dwelling",
+        "site":"Wear Chare, Bishop Auckland",
+        "la":"Durham County Council",
         "text": `
-          
-          <br /><br />
-          
-          <br /><br />
-          
-        `,
-        "image": "",
-        "images": ["","","",""]
+        Construction works were completed in late 2015 to create one of three proposed new dwellings on a site in very close proximity to Bishop Auckland town centre.  The development comprises a five bedroom dwelling and detached garage overlooking the River Wear.  There is effectively one house type, barring a small alteration, which makes up three units for this small scale housing development. Highway constraints dictated the final number of units. `,
+        "image": "P070-03.JPG",
+        "images": ["P070-01.JPG","P070-02.JPG","P070-03.JPG","P070-04.JPG"]
       },
       {
-        "id": "",
-        "title": "",
-        "project":"",
-        "site":"",
-        "la":"",
+        "id": "P080",
+        "title": "ow Fields Farm",
+        "project":"Single detached dwelling",
+        "site":"Land at Low Fields Farm, Eggleston",
+        "la":"Durham County Council",
         "text": `
-          
-          <br /><br />
-          
-          <br /><br />
-          
+        Full planning permission was obtained for a large four bedroom detached dwelling on a farmstead immediately to the west of Eggleston. The site had several farm building but no dwelling. A number of these buildings were restored as part of the construction process. 
+        <br /><br />
+        The design of the new proposed dwelling is intended to be sympathetic to its surroundings, whilst being designed to incorporate similar characteristics to those of traditional farm dwellings. The ridge levels to the development vary in height to avoid massing and help create a visually interesting building. The roofs are of natural blue slate. The walls are random natural stone rubble with U-PVC sash windows. Natural stone dressings in the form of cills, heads and quoins were used on the dwelling, together with a random rubble stone wall.
         `,
-        "image": "",
-        "images": ["","","",""]
+        "image": "P080-04.JPG",
+        "images": ["P080-01.JPG","P080-02.JPG","P080-03.JPG","P080-04.JPG"]
       }
     ]
   },
