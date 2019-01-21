@@ -6,6 +6,7 @@ class ProjectCategoryItems extends Component {
     super(props);
     this.state = {
       category: this.props.category,
+      categoryDisplayName: this.props.categoryDisplayName,
       cards: this.props.cards,
       //onCardClick: this.props.onCardClicked
     };
@@ -14,6 +15,7 @@ class ProjectCategoryItems extends Component {
   componentWillMount() {
     this.setState({
       category: this.props.category,
+      categoryDisplayName: this.props.categoryDisplayName,
       cards: this.props.cards,
       //onCardClick: this.props.onCardClicked
     });
@@ -30,6 +32,7 @@ class ProjectCategoryItems extends Component {
               index={key} 
               details={this.state.cards[key]} 
               category={this.state.category}
+              categoryDisplayName={this.state.categoryDisplayName}
               //onClick={this.state.onCardClick}
             />)
         }

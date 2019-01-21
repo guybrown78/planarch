@@ -26,6 +26,7 @@ function projectsCategory(){
   ReactDOM.render(<ProjectCategoryItems 
     cards={categoriesData.cards} 
     category={currentCategory}
+    categoryDisplayName={categoriesData.displayName}
     onCardClicked={(id) => onCardClicked(id)}
   />, itemsEL);
   // modal popup

@@ -13,13 +13,13 @@ class Button extends React.Component {
 
 class CardHeader extends React.Component {
   render() {
-    const { image, category, id } = this.props;
+    const { image, category, id, categoryDisplayName } = this.props;
     var style = { 
         backgroundImage: `url(./project-imgs/${category}/${id}/${encodeURI(image)})`
     };
     return (
       <header style={style} className="card-header">
-        <h4 className="card-header--title">{category}</h4>
+        <h4 className="card-header--title">{categoryDisplayName}</h4>
       </header>
     )
   }
@@ -53,6 +53,7 @@ class ProjectCategoryCard extends React.Component {
     <a href={itemURL} className="card" /*onClick={clickHandler}*/>
         <CardHeader 
           category={this.props.category} 
+          categoryDisplayName={this.props.categoryDisplayName}
           image={this.props.details.image} 
           id={this.props.details.id}
         />
