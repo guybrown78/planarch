@@ -2,6 +2,9 @@
 
 .project-item-carousel{
   .carousel{
+    .slide{
+      background: $white;
+    }
     .thumbs-wrapper{
       display: none;
       .thumbs{
