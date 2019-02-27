@@ -2,8 +2,7 @@ const ProjectsData = [{
     "category": "commercial",
     "displayName": "Commercial",
     "imagePath": "./project-imgs/commercial/",
-    "cards": [
-      {
+    "cards": [{
         "id": "1187",
         "title": "Patterson Ford Scotswood Road",
         "project": "Vehicle body repair shop, MOT and valeting booths, and showroom",
@@ -31,7 +30,7 @@ const ProjectsData = [{
       },
       {
         "id": "1325",
-        "title": "Brambledown Landscapes",
+        "title": "Brambles Coffee Shop",
         "project": "New cafeteria at Poplar Tree Garden Centre",
         "site": "Shincliffe, Durham",
         "la": "Durham County Council",
@@ -105,7 +104,7 @@ const ProjectsData = [{
       },
       {
         "id": "1758",
-        "title": "P Scott",
+        "title": "Shop and Apartment, Barnard Castle",
         "project": "Refurbishment of existing shop and new apartment above",
         "site": "Barnard Castle, Bishop Auckland",
         "la": "Durham County Council",
@@ -117,7 +116,7 @@ const ProjectsData = [{
       },
       {
         "id": "1325-b",
-        "title": "Brambledown Landscapes - pahse 2",
+        "title": "Brambles Coffee Shop - phase 2",
         "project": "Extension to cafeteria at Poplar Tree Garden Centre",
         "site": "Shincliffe, Durham",
         "la": "Durham County Council",
@@ -144,15 +143,14 @@ const ProjectsData = [{
   {
     "category": "conversions",
     "displayName": "Conversions",
-    "cards": [
-      {
+    "cards": [{
         "id": "1633",
-        "title": "Heather Hall",
+        "title": "Downland Farm",
         "project": "Conversion of redundant farm outbuildings and erection of extension to create a new dwelling",
         "site": "Downland Farm, Bishopton",
         "la": "Darlington Borough Council",
         "text": `
-        The development was for a single new dwelling formed from existing outbuildings at Downland Farm.  The majority of the proposed dwelling is formed from existing buildings, the appearance and materials were dictated by what is available and in existence. The new roofs are pitched with clay pantiles to reflect adjacent buildings. Externally, walls are a mixture of rendered, painted surfaces and natural stone rubble walls. Windows are timber painted white, again as on adjacent structures.
+        The development was for a single new dwelling formed from existing outbuildings at Downland Farm.  The majority of the proposed dwelling is formed from existing buildings, the appearance and materials were dictated by what was available and in existence. The new roofs are pitched with clay pantiles to reflect adjacent buildings. Externally, walls are a mixture of rendered, painted surfaces and natural stone rubble walls. Windows are timber painted white, again as on adjacent structures.
         `,
         "image": "1633-1.JPG",
         "images": ["1633-1.JPG", "1633-2.JPG", "1633-3.JPG", "1633-4.JPG", "1633-5.JPG"]
@@ -178,7 +176,7 @@ const ProjectsData = [{
         "site": "High Shittlehopeburn, Stanhope",
         "la": "Durham County Council",
         "text": `
-        The development at High Shittlehopeburn Farm, near Stanhope in Weardale, Co. Durham was completed in 2015 providing a dwelling for the client and his parents.  The site had two buildings which contained an abandoned farmhouse of historic importance and barn adjacent, which were both converted to provide two family homes. Extensive structural works were required to the farm house in order to prevent it collapsing initially and to ensure that the building was capable of being safely utilised. 
+        The development at High Shittlehopeburn Farm, near Stanhope in Weardale, Co. Durham was completed in 2015 providing dwellings for the client and his parents.  The site had two buildings which contained an abandoned farmhouse of historic importance and barn adjacent, which were both converted to provide two family homes. Extensive structural works were initially required to the farm house in order to prevent it collapsing initially and to ensure that the building was capable of being safely utilised. 
  <br /><br />
         Several extensions were added to the side and rear of the property, which provided a sunroom, home office, vertical circulation to the utilised roof space that created additional habitable space. The setting of the site is exceptional and the conversion schemes have improved the site and its surroundings and the entrance into Stanhope.
         `,
@@ -205,17 +203,17 @@ const ProjectsData = [{
         "text": `
         The existing building is located in the Conservation Area of Barnard Castle at the junction of Queens Street and Birch Road, being a three storey building constructed in random rubble to the outerleaf and which was used as storage to the upper floors and a joinery to the ground floor, but previously being a mill or a warehouse. 
         <br /><br />
-        The building was converted to provide three dwellings with two bedrooms with one unit being located on each floor. The external alterations were kept to a minimum and the existing structural openings were utilised with only one additional window being required.`,
+        The building was converted to provide three dwellings each with two bedrooms with one unit being located on each floor. The external alterations were kept to a minimum and the existing structural openings were utilised with only one additional window being required.`,
         "image": "P124-01.JPG",
         "images": ["P124-01.JPG", "P124-02.JPG", "P124-03.jpeg"]
       },
       {
         "id": "P146",
-        "title": "Residential conversion",
-        "project": "Residential conversion",
-        "site": "North East",
-        "la": "N/A",
-        "text": ``,
+        "title": "Holiday cottages",
+        "project": "Conversion of outbuildings to holiday cottages",
+        "site": "Brandon Village",
+        "la": "Durham County Council",
+        "text": `The client owned two outbuildings on his land that were formally a butcher’s shop and a garage, which he wished to convert to two holiday cottages. The client had vast knowledge of the tourism trade and wished to create a new business that he could run. Whilst the buildings were quite small, it was possible to create a one-bedroom cottage and a two-bedroom cottage. The client has confirmed that the both have been a real success and he has subsequently applied for and received planning permission for a third cottage as well as four additional new build holiday cottages to the rear of his plot.`,
         "image": "P146-05.jpg",
         "images": ["P146-02.JPG", "P146-03.JPG", "P146-04.jpg", "P146-05.jpg", "P146-06.jpg", "P146-07.JPG"]
       }
@@ -225,8 +223,7 @@ const ProjectsData = [{
   {
     "category": "residential-development",
     "displayName": "Residential Development",
-    "cards": [
-      {
+    "cards": [{
         "id": "1028",
         "title": "Thorngate",
         "project": "Housing development",
@@ -337,7 +334,7 @@ The new build units range from two storey housing to four storey town houses usi
       },
       {
         "id": "1564",
-        "title": "Princess Street",
+        "title": "Princes Street",
         "project": "7no. apartments",
         "site": "18 Princes Street, Bishop Auckland, County Durham",
         "la": "Durham County Council",
@@ -360,26 +357,15 @@ The new build units range from two storey housing to four storey town houses usi
         "text": `
         Previously a bathroom showroom, this property, which is Grade II Listed, has been restored and converted to provide residential apartments with a small retail unit. Opportunity was taken to also develop further apartments via an extension and linked new build to the rear, enjoying private gardens, in a location close to the centre of the City of Durham.
         `,
-        "image": "1669-01.JPG",
+        "image": "1669-04.JPG",
         "images": ["1669-01.JPG", "1669-02.JPG", "1669-03.JPG", "1669-04.JPG"]
-      },
-      {
-        "id": "0001",
-        "title": "Lydgate Lane",
-        "project": "Housing Development",
-        "site": "Lydgate Lane",
-        "la": "N/A",
-        "text": ``,
-        "image": "IMG_3702.JPG",
-        "images": ["IMG_3700.JPG", "IMG_3701.JPG", "IMG_3702.JPG", "IMG_3703.JPG", "IMG_3704.JPG", "IMG_3706.JPG"]
       }
     ]
   },
   {
     "category": "bespoke-dwellings",
     "displayName": "Bespoke Dwellings",
-    "cards": [
-      {
+    "cards": [{
         "id": "1149",
         "title": "Fishburn Airfield",
         "project": "Single detached dwelling",
@@ -400,7 +386,7 @@ The new build units range from two storey housing to four storey town houses usi
         "text": `
         Full planning permission was obtained for a four bedroom dormer bungalow on land to the rear of an existing dwelling on an established housing development, the land forming part of the curtilage of the parent dwelling, and being formerly used as an orchard. 
 <br /><br />
-        The proposed building is designed to reflect the details of the surrounding dwellings which have their own unique characteristics whilst respecting the privacy and amenity of neighbouring properties.  
+        The building is designed to reflect the details of the surrounding dwellings which have their own unique characteristics whilst respecting the privacy and amenity of neighbouring properties.  
         `,
         "image": "1366-01.jpg",
         "images": ["1366-01.jpg", "1366-02.JPG", "1366-04.jpg"]
@@ -416,19 +402,19 @@ The new build units range from two storey housing to four storey town houses usi
         <br /><br />
         The client had specific the requirements for the house and it was determined that the five bedrooms were to be suites with dressing areas, seating and en-suite facilities. Three suites were required for his children along with a guest suite for visitors. The final and largest suite was required for the client and ultimately this became a penthouse suite. All suites were to have balconies.
         <br /><br />
-        General living accommodation was to comprise a large lounge and a large kitchen with its own dining area. It was important to the client that the kitchen was large enough to be a communal area for the family to gather at mornings and evenings when all the family members were together. A large lobby area, laundry room, utility and a lift to all floors as well as a feature staircase would also be required. A large area of the dwelling was to be given over to an entertainment suite. This was to have a swimming pool, changing facilities, sauna, seating area, gymnasium equipment, bar, dance floor and cinema screen. Externally there were to be three double garages, a badminton court and extensive landscaped gardens.
+        General living accommodation was to comprise a large lounge and a large kitchen with its own dining area. It was important to the client that the kitchen was large enough to be a communal area for the family to gather at mornings and evenings when all the family members were together. A large lobby area, laundry room, utility and a lift to all floors as well as a feature staircase were also required. A large area of the dwelling was to be given over to an entertainment suite. This was to have a swimming pool, changing facilities, sauna, seating area, gymnasium equipment, bar, dance floor and cinema screen. Externally there were to be three double garages, a badminton court and extensive landscaped gardens.
         `,
         "image": "1377 photo 1.jpg",
         "images": ["1377 photo 1.jpg", "1377 photo 2.jpg", "1377 photo 4.jpg", "1377 photo 5.JPG"]
       },
       {
         "id": "1616",
-        "title": "Mee",
+        "title": "Woodlea",
         "project": "Single detached dwelling",
         "site": "Land at Woodlea, Nr Lanchester",
         "la": "Durham County Council",
         "text": `
-        Full planning permission was obtained for a two bedroom cottage on land at Woodlea, near Lanchester after an extensive planning process, which was approved on appeal. The project involved the demolition of a small Edwardian timber lodge in order to accommodate the proposed new build dwelling.
+        Full planning permission was obtained for a two bedroom cottage on land at Woodlea, near Lanchester after an extensive planning process, which invoved a successful appeal. The project involved the demolition of a small Edwardian timber lodge in order to accommodate the proposed new build dwelling.
         <br /><br />
         Due to the original planning constraints the scale of the property was quite modest; however, successful extensions were added to the newly built property – the last being a green oak structure which provides the clients with a property which meets their original aspirations for the site, and which is detailed in the section on extensions.
         `,
@@ -484,7 +470,7 @@ The new build units range from two storey housing to four storey town houses usi
         "site": "Quarry House Lane, Durham",
         "la": "Durham County Council",
         "text": `
-        The development at Quarry House Lane, near Neville’s Cross, Durham was completed in 2015 providing a dwelling for Mr & Mrs McLellan on a site within the Durham City Green Belt.  The clients purchased the site with the intention to create a highly energy efficient dwelling to replace the existing house which was of an unprepossessing and somewhat inappropriate suburban 1930’s design.  Rather than refurbish and extend the existing dwelling, which had a poor standard of accommodation, it was proposed to demolish and replace it with a house more appropriate to its surroundings in terms of design and materials, whilst meeting the specification and accommodation requirements of the clients.`,
+        The development at Quarry House Lane, near Neville’s Cross, Durham was completed in 2015 providing a dwelling for the client on a site within the Durham City Green Belt.  The clients purchased the site with the intention to create a highly energy efficient dwelling to replace the existing house which was of an unprepossessing and somewhat inappropriate suburban 1930’s design.  Rather than refurbish and extend the existing dwelling, which had a poor standard of accommodation, it was proposed to demolish and replace it with a house more appropriate to its surroundings in terms of design and materials, whilst meeting the specification and accommodation requirements of the clients.`,
         "image": "P047-01.JPG",
         "images": ["P047-01.JPG", "P047-02.JPG", "P047-03.JPG", "P047-04.JPG", "P047-05.JPG"]
       },
@@ -517,9 +503,9 @@ The new build units range from two storey housing to four storey town houses usi
         "site": "Land at Low Fields Farm, Eggleston",
         "la": "Durham County Council",
         "text": `
-        Full planning permission was obtained for a large four bedroom detached dwelling on a farmstead immediately to the west of Eggleston. The site had several farm building but no dwelling. A number of these buildings were restored as part of the construction process. 
+        Full planning permission was obtained for a large four bedroom detached dwelling on a farmstead immediately to the west of Eggleston. The site had several farm buildings but no dwelling. A number of these buildings were restored as part of the construction process. 
         <br /><br />
-        The design of the new proposed dwelling is intended to be sympathetic to its surroundings, whilst being designed to incorporate similar characteristics to those of traditional farm dwellings. The ridge levels to the development vary in height to avoid massing and help create a visually interesting building. The roofs are of natural blue slate. The walls are random natural stone rubble with U-PVC sash windows. Natural stone dressings in the form of cills, heads and quoins were used on the dwelling, together with a random rubble stone wall.
+        The design of the new dwelling is intended to be sympathetic to its surroundings, whilst being designed to incorporate similar characteristics to those of traditional farm dwellings. The ridge levels to the development vary in height to avoid massing and help create a visually interesting building. The roofs are of natural blue slate. The walls are coursed natural stone with U-PVC sash windows. Natural stone dressings in the form of cills, heads and quoins were used on the dwelling, together with a stone wall.
         `,
         "image": "P080-04.JPG",
         "images": ["P080-01.JPG", "P080-02.JPG", "P080-03.JPG", "P080-04.JPG"]
@@ -529,8 +515,7 @@ The new build units range from two storey housing to four storey town houses usi
   {
     "category": "extensions",
     "displayName": "Extensions",
-    "cards": [
-      {
+    "cards": [{
         "id": "1587",
         "title": "Lutterington Hall",
         "project": " New office and garage",
@@ -625,7 +610,7 @@ The new build units range from two storey housing to four storey town houses usi
         "text": `
         The client purchased the grade II listed building near Stokesley in 2013. The project involved extending and renovating the property to meet her requirements internally for her new family home and to also revitalise the external façade of the building, to allow the building to reflect its listed status. 
         <br /><br />
-        The project involved extensive internal and external alterations as well as several extensions whilst completely refurbish this existing manor house to its former glory. The stone built extensions were designed to be completely sympathetic to the existing building.`,
+        The project involved extensive internal and external alterations as well as several extensions whilst completely refurbishing this existing manor house to its former glory. The stone built extensions were designed to be completely sympathetic to the existing building.`,
         "image": "P075-01.JPG",
         "images": ["P075-01.JPG", "P075-02.JPG", "P075-03.JPG", "P075-04.JPG"]
       },
@@ -636,7 +621,7 @@ The new build units range from two storey housing to four storey town houses usi
         "site": "Eastfield, Low Newton By the Sea",
         "la": "Northumberland County Council",
         "text": `
-        The applicant wished to convert the loft space and extend an existing single storey dwelling located to the eastern edge of the village of Low Newton By The Sea.  The dwelling is a semi-detached, single storey unit which had an existing hipped roof. The client’s objective was to add a side extension and utilise the roof space to provide additional habitable floor space and bedrooms. Dormer windows were also introduced to ensure that the exceptional views were incorporated within the design. The dwelling was also modified to be fully wheelchair accessible. An ASHP also helped create a more energy efficient building. `,
+        The applicant wished to convert the loft space and extend an existing single storey dwelling located to the eastern edge of the village of Low Newton By The Sea.  The dwelling is a semi-detached, single storey unit which had an existing hipped roof. The client’s objective was to add a side extension and utilise the roof space to provide additional habitable floor space and bedrooms. Dormer windows were also introduced to ensure that the exceptional views were incorporated within the design. The dwelling was also modified to be fully wheelchair accessible. An air source heat pump (ASHP) also helped create a more energy efficient building. `,
         "image": "P116-01.JPG",
         "images": ["P116-01.JPG", "P116-02.JPG", "P116-03.JPG", "P116-04.JPG"]
       },
@@ -660,7 +645,7 @@ The new build units range from two storey housing to four storey town houses usi
         "project": "Green Oak extension to existing dwelling",
         "site": "Land at Woodlea, Nr Lanchester",
         "la": "Durham County Council",
-        "text": `Following full planning permission for a two bedroom cottage obtained by ourselves on land at Woodlea, near Lanchester, due to the original planning constraints the scale of the property was quite modest. Therefore, the clients wished to extend the existing building using a green oak structure which now provides them with a sunroom and a property that has met their aspirations which were advised at the start of what was a lengthy and complicated planning process. `,
+        "text": `Following full planning permission for a two bedroom cottage obtained by ourselves on land at Woodlea, near Lanchester, due to the original planning constraints the scale of the property was quite modest. Therefore, the clients wished to extend the existing building using a green oak structure which now provides them with a sunroom and a property that has met their aspirations of which were advised at the start of what was a lengthy and complicated planning process. `,
         "image": "P142-01.JPG",
         "images": ["P142-01.JPG", "P142-02.JPG", "P142-03.JPG", "P142-04.JPG"]
       },
@@ -668,10 +653,10 @@ The new build units range from two storey housing to four storey town houses usi
         "id": "P175",
         "title": "Poplar Tree Garden Centre",
         "project": "Proposed extension and refurbishment of existing dwelling",
-        "site": "Poplar Tree Garden Centre",
+        "site": "Shincliffe, Durham",
         "la": "Durham County Council",
         "text": `
-        The site lies within the Conservation Area of Shincliffe village and the original dwelling is a traditional built building with Georgian sash windows and a slate roof finish, at least 150 years. The main body of the house is two storey but there is also a storey-and-a-half element that is currently used for storage. 
+        The site lies within the Conservation Area of Shincliffe village and the original dwelling is a traditional built building with Georgian sash windows and a slate roof finish. The main body of the house is two storey but there is also a storey-and-a-half element which was used for storage. 
         <br /><br />
         However, the building was not of sufficient size to accommodate modern day living, and therefore, it was extended to the front and rear and the roof height to the side elevation was also raised. The existing lean-to structure to the front was demolished and extended to create a large double height entrance, whilst to the rear a stone orangery was added to create an open plan living/ kitchen/ dining area whilst retaining the existing lounge. Raising the roof of the existing side extension allowed a large additional master bedroom with a dressing area and ensuite to be created.
         <br /><br />
@@ -684,8 +669,7 @@ The new build units range from two storey housing to four storey town houses usi
   {
     "category": "community-education",
     "displayName": "Community & Education",
-    "cards": [
-      {
+    "cards": [{
         "id": "1600",
         "title": "St Hilds",
         "project": "Extension to Foundation Unit and outdoor teaching area.",
@@ -714,11 +698,11 @@ The new build units range from two storey housing to four storey town houses usi
         The building itself has a natural stone plinth and shiplap rainscreen cladding above with composite roof panels. Renewable energy sources are used for the building, including solar panels, a wind turbine and a wood burning stove ensuring that this is a sustainable and energy efficient building. The equipment will also form part of an educational tour for clients and members of the public to see green-energy installed and functioning.
         `,
         "image": "1622 - 3.JPG",
-        "images": ["1622 - 1.JPG", "1622 - 2.JPG", "1622 - 3.JPG", "1622 - 4.JPG","1622 - 5.JPG","1622 - 6.JPG"]
+        "images": ["1622 - 1.JPG", "1622 - 2.JPG", "1622 - 3.JPG", "1622 - 4.JPG", "1622 - 5.JPG", "1622 - 6.JPG"]
       },
       {
         "id": "1745",
-        "title": "Alun Armstrong",
+        "title": "Alun Armstrong Soccer Centre",
         "project": "Indoor soccer centre with ancillary facilities and cafeteria",
         "site": "Unit 4 George Reynolds Ind Est, Shildon",
         "la": "Durham County Council",
@@ -732,9 +716,9 @@ The new build units range from two storey housing to four storey town houses usi
         "project": "Mini golf kiosk",
         "site": "Barnard Castle, Co Durham",
         "la": "Durham County Council",
-        "text": `Durham County Council approached PlanArch Design Ltd to obtain planning permission for a mini golf kiosk in Barnard Castle, County Durham. The kiosk has a floor area of 15m2, which includes an office/ kiosk and a seating area for customers. The building was constructed using horizontally laid timber rainscreen cladding, timber windows, a single ply membrane (giving the appearance of lead) being used as the roof finish and abstract glulam structural supports also used to give the building a dynamic feature.`,
+        "text": `Durham County Council approached PlanArch Design Ltd to design and obtain planning permission for a mini golf kiosk in Barnard Castle, County Durham. The kiosk has a floor area of 15m2, which includes an office/ kiosk and a seating area for customers. The building was constructed using horizontally laid timber rainscreen cladding, timber windows, a single ply membrane (giving the appearance of lead) being used as the roof finish and abstract glulam structural supports also used to give the building a dynamic feature.`,
         "image": "P007-01.JPG",
-        "images": ["P007-01.JPG", "P007-02.JPG", "P007-03.JPG", "P007-04.JPG","P007-05.JPG"]
+        "images": ["P007-01.JPG", "P007-02.JPG", "P007-03.JPG", "P007-04.JPG", "P007-05.JPG"]
       },
       {
         "id": "P188",
@@ -752,10 +736,9 @@ The new build units range from two storey housing to four storey town houses usi
     ]
   },
   {
-    "category": "future",
-    "displayName": "Future Projects",
-    "cards": [
-      {
+    "category": "speculative",
+    "displayName": "Speculative Projects",
+    "cards": [{
         "id": "1449",
         "title": "Residential Development",
         "project": "Speculative work; project details to be confirmed...",
@@ -776,65 +759,65 @@ The new build units range from two storey housing to four storey town houses usi
         "images": ["1676-03.jpg", "1676-04.jpg"]
       },
       {
-      "id": "P012",
-      "title": "Rural Residential Development",
-      "project": "Speculative work; project details to be confirmed...",
-      "site": "N/A",
-      "la": "N/A",
-      "text": ``,
-      "image": "P012 - 01.jpg",
-      "images": ["P012 - 01.jpg", "P012 - 04.jpg", "P012 - 05.jpg", "P012 - 06.jpg","P012 - 10.jpg"]
-    },
-    {
-      "id": "P028",
-      "title": "Tower block",
-      "project": "Speculative work; project details to be confirmed...",
-      "site": "N/A",
-      "la": "N/A",
-      "text": ``,
-      "image": "P028 - 05.jpg",
-      "images": ["P028 - 04.jpg", "P028 - 05.jpg"]
-    },
-    {
-      "id": "P036",
-      "title": "Riverside Residential",
-      "project": "Speculative work; project details to be confirmed...",
-      "site": "N/A",
-      "la": "N/A",
-      "text": ``,
-      "image": "P036 - 01.jpg",
-      "images": ["P036 - 01.jpg", "P036 - 03.jpg", "P036 - 04.jpg", "P036 - 05.jpg"]
-    },
-    {
-      "id": "P106",
-      "title": "Single Dwelling",
-      "project": "Speculative work; project details to be confirmed...",
-      "site": "N/A",
-      "la": "N/A",
-      "text": ``,
-      "image": "P106-03.jpg",
-      "images": ["P106-03.jpg", "P106-06.jpg", "P106-08.jpg"]
-    },
-    {
-      "id": "P265",
-      "title": "Rural House",
-      "project": "Speculative work; project details to be confirmed...",
-      "site": "N/A",
-      "la": "N/A",
-      "text": ``,
-      "image": "P265 - 02.jpg",
-      "images": ["P265 - 02.jpg", "P265 - 03.jpg"]
-    },
-    {
-      "id": "0000",
-      "title": "Miscellaneous projects",
-      "project": "A selection of out specultive work",
-      "site": "N/A",
-      "la": "N/A",
-      "text": ``,
-      "image": "1632 - 04.jpg",
-      "images": ["1632 - 04.jpg", "1671 - 03.jpg", "1682-3.jpg", "China 4.jpg","P020-04.jpg","P059-03.jpg", "P068-03.jpg"]
-    }
+        "id": "P012",
+        "title": "Rural Residential Development",
+        "project": "Speculative work; project details to be confirmed...",
+        "site": "N/A",
+        "la": "N/A",
+        "text": ``,
+        "image": "P012 - 01.jpg",
+        "images": ["P012 - 01.jpg", "P012 - 04.jpg", "P012 - 05.jpg", "P012 - 06.jpg", "P012 - 10.jpg"]
+      },
+      {
+        "id": "P028",
+        "title": "Tower block",
+        "project": "Speculative work; project details to be confirmed...",
+        "site": "N/A",
+        "la": "N/A",
+        "text": ``,
+        "image": "P028 - 05.jpg",
+        "images": ["P028 - 04.jpg", "P028 - 05.jpg"]
+      },
+      {
+        "id": "P036",
+        "title": "Riverside Residential",
+        "project": "Speculative work; project details to be confirmed...",
+        "site": "N/A",
+        "la": "N/A",
+        "text": ``,
+        "image": "P036 - 01.jpg",
+        "images": ["P036 - 01.jpg", "P036 - 03.jpg", "P036 - 04.jpg", "P036 - 05.jpg"]
+      },
+      {
+        "id": "P106",
+        "title": "Single Dwelling",
+        "project": "Speculative work; project details to be confirmed...",
+        "site": "N/A",
+        "la": "N/A",
+        "text": ``,
+        "image": "P106-03.jpg",
+        "images": ["P106-03.jpg", "P106-06.jpg", "P106-08.jpg"]
+      },
+      {
+        "id": "P265",
+        "title": "Rural House",
+        "project": "Speculative work; project details to be confirmed...",
+        "site": "N/A",
+        "la": "N/A",
+        "text": ``,
+        "image": "P265 - 02.jpg",
+        "images": ["P265 - 02.jpg", "P265 - 03.jpg"]
+      },
+      {
+        "id": "0000",
+        "title": "Miscellaneous projects",
+        "project": "A selection of out specultive work",
+        "site": "N/A",
+        "la": "N/A",
+        "text": ``,
+        "image": "1632 - 04.jpg",
+        "images": ["1632 - 04.jpg", "1671 - 03.jpg", "1682-3.jpg", "China 4.jpg", "P020-04.jpg", "P059-03.jpg", "P068-03.jpg"]
+      }
     ]
   }
 ];
