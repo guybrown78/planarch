@@ -37,11 +37,14 @@ function projectItem(){
 
 function initialisePage(categoriesData, itemData){
   // set generic page content (titles etc...)
-  const titleEL = document.getElementById("js-page-hero-title");
+	const titleEL = document.getElementById("js-page-hero-title");
+	const pageHeaderEL = document.getElementById("js-page-header");
   const currentBreadcrumbEL = document.getElementById("js-current-breadcrumb");
   const parentBreadcrumbEL = document.getElementById("js-parent-breadcrumb");
   const parentBreadcrumbURL = parentBreadcrumbEL.getAttribute('href');
  
+	pageHeaderEL.setAttribute('data-currentcategory', currentCategory);
+	// 
   parentBreadcrumbEL.innerHTML = `
     <i class="fas fa-arrow-circle-right"></i>
     <span>${categoriesData.displayName}</span>

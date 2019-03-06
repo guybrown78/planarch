@@ -3,7 +3,7 @@ extends layout
 
 block content
 	- var currentPath = 'projects-category';
-	section(class="page-header small-header", id="js-page-header", data-currentpath=`${currentPath}`)
+	section(class="page-header small-header", id="js-page-header", data-currentpath=`${currentPath}`, data-currentcategory="cat")
 		include nav
 		div(class="page-hero", id="js-pagehero")
 			div(class="slider-text-inner text-center")

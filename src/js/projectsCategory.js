@@ -43,7 +43,11 @@ function initialisePage(){
    // set generic page content (titles etc...)
    const titleEL = document.getElementById("js-page-hero-title");
    const currentBreadcrumbEL = document.getElementById("js-current-breadcrumb");
-   titleEL.innerHTML = `${categoriesData.displayName}`.toUpperCase();
+	 const pageHeaderEL = document.getElementById("js-page-header");
+	 
+	 pageHeaderEL.setAttribute('data-currentcategory', currentCategory);
+
+	 titleEL.innerHTML = `${categoriesData.displayName}`.toUpperCase();
    currentBreadcrumbEL.innerHTML = `
     <i class="far fa-arrow-alt-circle-right"></i>
     <span>${categoriesData.displayName}</span>

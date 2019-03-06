@@ -43,12 +43,12 @@ $pageHeaderSmallHeight: 350px;
 .page-header[data-currentpath="projects"]::after{
     @include add-header-bg($bgImgURL:'../img/header_bg_7.jpg', $height:$pageHeaderSmallHeight);
 }
-.page-header[data-currentpath="projects-category"]::after{
-    @include add-header-bg($bgImgURL:'../img/header_bg_7.jpg', $height:$pageHeaderSmallHeight);
-}
-.page-header[data-currentpath="project-item"]::after{
-    @include add-header-bg($bgImgURL:'../img/header_bg_7.jpg', $height:$pageHeaderSmallHeight);
-}
+// .page-header[data-currentpath="projects-category"]::after{
+//     @include add-header-bg($bgImgURL:'../img/header_bg_7.jpg', $height:$pageHeaderSmallHeight);
+// }
+// .page-header[data-currentpath="project-item"]::after{
+//     @include add-header-bg($bgImgURL:'../img/header_bg_7.jpg', $height:$pageHeaderSmallHeight);
+// }
 .page-header[data-currentpath="about"]::after{
     @include add-header-bg($bgImgURL:'../img/header_bg_3.jpg', $height:$pageHeaderSmallHeight);
 }
@@ -59,5 +59,33 @@ $pageHeaderSmallHeight: 350px;
     @include add-header-bg($bgImgURL:'../img/header_bg_6.jpg', $height:$pageHeaderSmallHeight);
 }
 
+//data-currentcategory
+.page-header{
+	&[data-currentpath="projects-category"],
+	&[data-currentpath="project-item"]
+	{
+		&[data-currentcategory="commercial"]::after{
+			@include add-header-bg($bgImgURL:'../project-imgs/commercial/1292/1292 photo 1-min.JPG', $height:$pageHeaderSmallHeight);
+		}
+		&[data-currentcategory="conversions"]::after{
+			@include add-header-bg($bgImgURL:'../project-imgs/conversions/P101/P101-01.JPG', $height:$pageHeaderSmallHeight);
+		}
+		&[data-currentcategory="residential-development"]::after{
+			@include add-header-bg($bgImgURL:'../project-imgs/residential-development/1028/1028-3.JPG', $height:$pageHeaderSmallHeight);
+		}
+		&[data-currentcategory="bespoke-dwellings"]::after{
+			@include add-header-bg($bgImgURL:'../img/header_bg_6.jpg', $height:$pageHeaderSmallHeight);
+		}
+		&[data-currentcategory="extensions"]::after{
+			@include add-header-bg($bgImgURL:'../project-imgs/extensions/P075/P075-02.JPG', $height:$pageHeaderSmallHeight);
+		}
+		&[data-currentcategory="community-education"]::after{
+			@include add-header-bg($bgImgURL:'../project-imgs/community-education/1600/1600-2.JPG', $height:$pageHeaderSmallHeight);
+		}
+		&[data-currentcategory="speculative"]::after{
+			@include add-header-bg($bgImgURL:'../project-imgs/speculative/P028/P028 - 05.jpg', $height:$pageHeaderSmallHeight);
+		}
+	}
+}
 @import './navigation.scss';
 @import './page-hero.scss';
