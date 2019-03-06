@@ -5,9 +5,10 @@ import navigation from './js/navigation';
 import projectsCategory from './js/projectsCategory';
 import projectItem from './js/projectItem';
 import aboutPage from './js/aboutPage';
+import testimonialsPage from './js/testimonialsPage';
 import contactPage from './js/contactPage';
 import guidePage from './js/guidePage';
-import newsFeed from './js/newsFeed'
+//import newsFeed from './js/newsFeed'
 import smoothscroll from 'smoothscroll-polyfill';
 //
 function init() {
@@ -44,7 +45,7 @@ function init() {
 
 	if(currentPath === "index"){
 		// add indexPage scripts
-		currentPageScript = new newsFeed();
+		//currentPageScript = new newsFeed();
 		return;
 	}
 
@@ -61,6 +62,11 @@ function init() {
 	if(currentPath === "about"){
 		// add aboutPage scripts
 		currentPageScript = new aboutPage();
+		return;
+	}
+	if(currentPath === "testimonials"){
+		// add testimonialsPage scripts
+		currentPageScript = new testimonialsPage();
 		return;
 	}
 	if(currentPath === "contact"){

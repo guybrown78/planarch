@@ -15,7 +15,7 @@
 
 .page-header {
     .navbar {
-        font-size: 1.9em;
+        font-size: 1.6em;
         padding-bottom: $padding-small;
         z-index: 3;
         &::after {
@@ -54,7 +54,7 @@
 }
 .nav li {
     //text-align: center;
-    margin: 15px; // auto;
+    margin: 10px; // auto;
 }
 
 .logo {
@@ -141,7 +141,7 @@
     }
 
     .nav__link {
-        margin-left: $padding-large;
+        margin-left: $padding-medium;
     }
     
     .logo {

@@ -1,22 +1,22 @@
-<nav class="navbar" id="js-navbar">
-  <span class="navbar-toggle" id="js-navbar-toggle">
-    <i class="fas fa-bars"></i>
-    <i class="fas fa-times"></i>
-  </span>
-  <a href="/index.html" class="logo">
-    span.logo-text PlanArch Design
-    <img src="./img/planarch-design-logo.png" title="PlanArch Design" alt="PlanArch Design Logo" />
-  </a>
-  <ul class="nav" id="js-nav">
-    li.nav__item: a.nav__link(href="./index.html", class=(currentPath.startsWith('index') ? 'nav__link--active' : ''))
-      span Home
-    li.nav__item: a.nav__link(href="./projects.html", class=(currentPath.startsWith('project') ? 'nav__link--active' : ''))
-      span Projects
-    li.nav__item: a.nav__link(href="./guide.html", class=(currentPath.startsWith('guide') ? 'nav__link--active' : ''))
-      span Guide
-    li.nav__item: a.nav__link(href="./about.html", class=(currentPath.startsWith('about') ? 'nav__link--active' : ''))
-      span About Us
-    li.nav__item: a.nav__link(href="./contact.html", class=(currentPath.startsWith('contact') ? 'nav__link--active' : ''))
-      span Contact
-  </ul>
-</nav>
+nav(class="navbar" id="js-navbar")
+	span(class="navbar-toggle" id="js-navbar-toggle")
+		i(class="fas fa-bars")
+		i(class="fas fa-times")
+
+	a(href="/index.html" class="logo")
+		span.logo-text PlanArch Design
+		img(src="./img/planarch-design-logo.png" title="PlanArch Design" alt="PlanArch Design Logo")
+
+	ul(class="nav" id="js-nav")
+		li.nav__item: a.nav__link(href="./index.html", class=(currentPath.startsWith('index') ? 'nav__link--active' : ''))
+			span Home
+		li.nav__item: a.nav__link(href="./projects.html", class=(currentPath.startsWith('project') ? 'nav__link--active' : ''))
+			span Projects
+		li.nav__item: a.nav__link(href="./guide.html", class=(currentPath.startsWith('guide') ? 'nav__link--active' : ''))
+			span Guide
+		li.nav__item: a.nav__link(href="./about.html", class=(currentPath.startsWith('about') ? 'nav__link--active' : ''))
+			span About Us
+		li.nav__item: a.nav__link(href="./testimonials.html", class=(currentPath.startsWith('testimonials') ? 'nav__link--active' : ''))
+			span Testimonials
+		li.nav__item: a.nav__link(href="./contact.html", class=(currentPath.startsWith('contact') ? 'nav__link--active' : ''))
+			span Contact

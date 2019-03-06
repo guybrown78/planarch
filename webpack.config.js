@@ -102,6 +102,10 @@ module.exports = {
 			//inject: false
 		}),
 		new HtmlWebpackPlugin({
+			template: 'src/testimonials.pug',
+			filename: 'testimonials.html',
+		}),
+		new HtmlWebpackPlugin({
 			template: 'src/contact.pug',
 			filename: 'contact.html',
 		}),

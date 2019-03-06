@@ -1,0 +1,21 @@
+//- about.pug
+extends layout
+
+block content
+	- var currentPath = 'testimonials';
+	section(class="page-header small-header", id="js-page-header", data-currentpath=`${currentPath}`)
+		include nav
+		div.page-hero#js-pagehero
+			div(class="slider-text-inner text-center")
+				h1 What Our Customers Say
+
+	section.page-items
+		div.page-details
+			ul.page-details-tabs
+				li
+					h2 Customer Testimonials
+			div.page-details-content
+				p We are located in the heart of Bishop Auckland, County Durham. Please feel free to contact us for your free 1 hour, no obligation consultation meeting.
+
+			div.page-details-content
+				//- div(class="planarch-map" id="js-planarch-map")
