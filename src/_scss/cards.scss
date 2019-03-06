@@ -285,40 +285,71 @@
             }
 
             .card-header{
-                height: 150px;
+                height: 300px;
                 width: 100%;
                 padding: $padding-small;
                 width:100%;
                 background-size:cover;
                 background-position: center center;
                 background-repeat: no-repeat;
-                color:#fff;
+								color:#fff;
+								display: flex;
+								flex-direction: column;
             }
             .card-header--title {
                 text-transform: uppercase;
-                margin: 0;
-            }
+								margin: 0;
+								padding: 0 5px;
+								background: rgb(128, 171, 214); /* Fallback for older browsers without RGBA-support */
+								background: rgba(128, 171, 214, 0.7);
+								color: $blue-darker;
+						}
+						.card-header--middle {
+							flex: 1;
+						}
+						.card-info{
+							height: auto;
+							display: flex;
+							flex-direction: column;
+							justify-content: flex-end;
+							.button-secondary{
+								align-self: flex-end;
+							}
+							background: rgb(128, 171, 214); /* Fallback for older browsers without RGBA-support */
+							background: rgba(128, 171, 214, 0);
+							.info-content {
+                font-size: 1.1em;
+                line-height: 1.8;
+							}
+							.project-site {
+									font-size: 0.9em;
+									font-style: italic;
+									i{
+											color: $grey-base;
+									}
+							}
+							transition: all .25s ease-in;
+							.info-content,
+							.project-site {
+								opacity: 0;
+								padding: $padding-small;
+								transition: opacity .25s ease-in;
+							}
+							&.open{
+								background: rgba(128, 171, 214, 0.7);
+								.info-content,
+								.project-site {
+									opacity: 1;
+								}
+							}
+						}
             .card-body {
                 padding: $padding-small;
                 background-color:#fff;
                 width:100%;
-                height: 100%;
+                //height: 100%;
             }
-            .body-content {
-                padding-bottom: $padding-medium;
-                font-size: 1.1em;
-                line-height: 1.8;
-            }
-            .project-site {
-                padding-bottom: $padding-small;
-                font-size: 0.9em;
-                font-style: italic;
-                // color: $grey-base;
-                i{
-                    color: $grey-base;
-                    // padding-right:$padding-small;
-                }
-            }
+            
             .button-primary {
                 border: none;
                 box-shadow: none;
@@ -331,7 +362,20 @@
                 i{
                     padding-right:4px;
                 }
-            }
+						}
+						.button-secondary {
+							border: none;
+							box-shadow: none;
+							font-family: inherit;
+							background: rgb(128, 171, 214); /* Fallback for older browsers without RGBA-support */
+							background: rgba(128, 171, 214, 0.7);
+							color: $blue-darker;
+							padding: 0.2em;
+							font-size: 1.5em;
+							border-radius: 2em;
+							line-height: 0em;
+							cursor: pointer;
+						}
               
         }
         
