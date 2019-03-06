@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Carousel } from 'react-responsive-carousel';
+import ClientTestimonialsCarousel from "./components/ClientTestimonialsCarousel";
 
 
-function aboutPage(){
+function testimonialsPage(){
   initialisePage();
   // set main content
- // const testimonialsEL = document.getElementById("js-client-testimonials");
-  //ReactDOM.render(<ClienTestimonialsCarousel />, testimonialsEL);
+  const testimonialsEL = document.getElementById("js-client-testimonials");
+  ReactDOM.render(<ClientTestimonialsCarousel />, testimonialsEL);
 }
 
 function initialisePage(){
