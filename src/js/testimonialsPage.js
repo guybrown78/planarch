@@ -7,7 +7,17 @@ function testimonialsPage(){
   initialisePage();
   // set main content
   const testimonialsEL = document.getElementById("js-client-testimonials");
-  ReactDOM.render(<ClientTestimonialsCarousel />, testimonialsEL);
+	ReactDOM.render(<ClientTestimonialsCarousel 
+		showThumbs={false} 
+		autoPlay={false} 
+		interval={2500} 
+		showArrows={true} 
+		showStatus={false} 
+		infiniteLoop={true} 
+		showIndicators={true} 
+		axis={"horizontal"} 
+		dynamicHeight={false}
+	/>, testimonialsEL);
 }
 
 function initialisePage(){

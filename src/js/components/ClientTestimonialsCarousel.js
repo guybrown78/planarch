@@ -2,24 +2,20 @@ import React from "react";
 import { Carousel } from 'react-responsive-carousel';
 
 class ClientTestimonialsCarousel extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    };
-  }
+  
 
   render() {
     return (
 			<Carousel 
-				showThumbs={false} 
-				autoPlay={true} 
-				interval={2500} 
-				showArrows={false} 
-				showStatus={false} 
-				infiniteLoop={true} 
-				showIndicators={false} 
-				axis={"horizontal"} 
-				dynamicHeight={true} 
+				showThumbs={this.props.showThumbs} 
+				interval={this.props.interval}
+				autoPlay={this.props.autoPlay}
+				showArrows={this.props.showArrows }
+				showStatus={this.props.showStatus}
+				infiniteLoop={this.props.infiniteLoop }
+				showIndicators={this.props.showIndicators}
+				axis={this.props.axis}
+				dynamicHeight={this.props.dynamicHeight}
 			>
            
             <div>

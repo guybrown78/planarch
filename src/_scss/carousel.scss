@@ -31,11 +31,44 @@
     }
   }
 }
-
+.main-client-testimonials-app{
+	.carousel{
+		//height: 250px;
+		background-color: $blue-lightest;
+    .slide{
+			background-color: transparent;
+		}
+		.testimonial{
+			font-size: 1.6em;
+			padding: 2.6em;
+			.fas{
+				color: $grey-dark;
+			}
+			.fa-quote-left{
+				padding-right: 15px;
+			}
+			.fa-quote-right{
+				padding-left: 15px;
+			}
+		}
+		.client{
+			margin: $padding-medium 0;
+			font-style: italic;
+			font-size: 1.1em;
+			padding-bottom: 10px;
+		}
+		.control-dots {
+			.dot{
+				background: $grey-base;
+				box-shadow: none;
+			}
+		}
+	}
+}
 .client-testimonials{
   .intro{
     font-style: italic;
-    font-size: 0.8em;
+    font-size: 1em;
     margin-top:$padding-small;
     margin-bottom: $padding-small;
   }
@@ -53,6 +86,8 @@
     .slide{
       background-color: transparent;
       .testimonial{
+				font-size: 1.2em;
+				padding: 1.2em;
         .fas{
           color: $grey-dark;
         }
@@ -65,7 +100,8 @@
       }
       .client{
         font-style: italic;
-        font-size: 0.8em;
+				font-size: 1em;
+				padding: 1em;
       }
     }
   }
