@@ -28,11 +28,14 @@ function projectItem(){
   ReactDOM.render(<ProjectItemCarousel 
     category={currentCategory}
     details={itemData}
-  />, carouselEL);
-  const infoEL = document.getElementById("js-project-item-info");
-  ReactDOM.render(<ProjectItemInfo 
-    details={itemData}
-  />, infoEL);
+	/>, carouselEL);
+	if(currentCategory !== "speculative"){
+		const infoEL = document.getElementById("js-project-item-info");
+  	ReactDOM.render(<ProjectItemInfo 
+    	details={itemData}
+  	/>, infoEL);
+	}
+  
 }
 
 function initialisePage(categoriesData, itemData){

@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import ProjectsData from "./models/Projects";
 import ProjectCategoryItems from './components/ProjectCategoryItems'
-// import ProjectItemModal from './components/ProjectItemModal'
 
 
 // get and set page parameters from query string
@@ -27,17 +26,11 @@ function projectsCategory(){
     cards={categoriesData.cards} 
     category={currentCategory}
     categoryDisplayName={categoriesData.displayName}
-    onCardClicked={(id) => onCardClicked(id)}
+    //onCardClicked={(id) => onCardClicked(id)}
   />, itemsEL);
-  // modal popup
-  // ReactDOM.render(<ProjectItemModal 
-  // />, projectItemEL);
+
 }
 
-// function onCardClicked(id){
-//   console.log(`here i am ${id}`);
-//   initialiseItem(id);
-// }
 
 function initialisePage(){
    // set generic page content (titles etc...)
@@ -54,7 +47,4 @@ function initialisePage(){
    `;
 }
 
-// function initialiseItem(id){
-//   ProjectItemModal.onOpenModal();
-// }
 export default projectsCategory
