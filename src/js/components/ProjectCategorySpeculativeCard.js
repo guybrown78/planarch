@@ -16,6 +16,9 @@ class CardHeader extends React.Component {
 		
 		const { image, category, id, images} = this.props;
 		const base = `./project-imgs/${category}/${id}`;
+		// TODO
+		// Stop the white flicker between initial image transitions by caching the image via adding them to a new Image();
+		// images.forEach()
     this.state = {
 			intervalTime: Math.floor(Math.random() * 3000) + 4000,
 			currentImageIndex: 0,
