@@ -11,13 +11,47 @@ class Button extends React.Component {
 }
 
 class CardHeader extends React.Component {
+	constructor(props) {
+		super(props);
+		
+		const { image, category, id, images} = this.props;
+		const base = `./project-imgs/${category}/${id}`;
+    this.state = {
+			intervalTime: Math.floor(Math.random() * 3000) + 4000,
+			currentImageIndex: 0,
+      currentImage: `url(${base}/${encodeURI(images[0])})`,
+		};
+	}
+	
+	componentDidMount() {
+		// set Interval
+    this.interval = setInterval(this.timer, this.state.intervalTime);
+	}
+	
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+	timer = () => {
+		const { category, id, images } = this.props;
+		const base = `./project-imgs/${category}/${id}`;
+		if((images.length - 1) > this.state.currentImageIndex){
+			this.setState({currentImageIndex:this.state.currentImageIndex + 1});
+		}else{
+			this.setState({currentImageIndex:0});
+		}
+		//console.log(this.state.currentImage);
+		
+		this.setState({currentImage: `url(${base}/${encodeURI(images[this.state.currentImageIndex])})`});
+		console.log(id, images.length, this.state.currentImageIndex,this.state.currentImage)
+	}
+  
+	
   render() {
-    const { image, category, id, title } = this.props;
-    var style = { 
-        backgroundImage: `url(./project-imgs/${category}/${id}/${encodeURI(image)})`
-    };
+		const { title } = this.props;
+		const secs = 4;
     return (
-      <div style={style} className="card-header">
+      <div style={{"backgroundImage":this.state.currentImage}}className="card-header">
         <h4 className="card-header--title">{title}</h4>
       </div>
     )
@@ -36,8 +70,10 @@ class CardBody extends React.Component {
 
 
 class ProjectCategorySpeculativeCard extends React.Component {
+	
   render() {
-    const itemURL = `./project-item.html?c=${this.props.category}&id=${this.props.details.id}`;
+		const itemURL = `./project-item.html?c=${this.props.category}&id=${this.props.details.id}`;
+		//console.log(this.props.details)
 		return (
 			<a 
 				href={itemURL}
@@ -46,7 +82,8 @@ class ProjectCategorySpeculativeCard extends React.Component {
        	<CardHeader 
           category={this.props.category} 
 					title={this.props.details.title} 
-          image={this.props.details.image} 
+					image={this.props.details.image} 
+					images={this.props.details.images} 
           id={this.props.details.id}
         />
 				<CardBody /> 

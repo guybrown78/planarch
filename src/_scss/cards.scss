@@ -285,13 +285,17 @@
             }
 
             .card-header{
+							margin: 0;
                 height: 310px;
                 width: 100%;
                 padding: $padding-small;
                 width:100%;
                 background-size:cover;
                 background-position: center center;
-                background-repeat: no-repeat;
+								background-repeat: no-repeat;
+								background-blend-mode: darken;
+								transition: 1s;
+								//
 								color:#fff;
 								display: flex;
 								flex-direction: column;
