@@ -17,6 +17,12 @@ class CardHeader extends React.Component {
 		const { image, category, id, images} = this.props;
 		const base = `./project-imgs/${category}/${id}`;
 		// TODO
+		// const cachedImages = Array.from(images);]
+		// // TODO
+		// cachedImages.forEach(function(img){
+		// 	new Image().src = base + encodeURI(img); 
+		// 	// caches images, avoiding white flash between background replacements
+		// });
 		// Stop the white flicker between initial image transitions by caching the image via adding them to a new Image();
 		// images.forEach()
     this.state = {
