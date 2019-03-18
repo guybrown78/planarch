@@ -16,15 +16,11 @@ class CardHeader extends React.Component {
 		
 		const { image, category, id, images} = this.props;
 		const base = `./project-imgs/${category}/${id}`;
-		// TODO
-		// const cachedImages = Array.from(images);]
-		// // TODO
-		// cachedImages.forEach(function(img){
-		// 	new Image().src = base + encodeURI(img); 
-		// 	// caches images, avoiding white flash between background replacements
-		// });
-		// Stop the white flicker between initial image transitions by caching the image via adding them to a new Image();
-		// images.forEach()
+		const cachedImages = Array.from(images);
+		cachedImages.forEach(function(img){
+			// caches images, avoiding white flash between background replacements
+			new Image().src = `${base}/${encodeURI(img)}`;
+		 });
     this.state = {
 			intervalTime: Math.floor(Math.random() * 3000) + 4000,
 			currentImageIndex: 0,
@@ -52,7 +48,7 @@ class CardHeader extends React.Component {
 		//console.log(this.state.currentImage);
 		
 		this.setState({currentImage: `url(${base}/${encodeURI(images[this.state.currentImageIndex])})`});
-		console.log(id, images.length, this.state.currentImageIndex,this.state.currentImage)
+		//console.log(id, images.length, this.state.currentImageIndex,this.state.currentImage)
 	}
   
 	
