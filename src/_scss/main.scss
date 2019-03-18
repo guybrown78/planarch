@@ -3,6 +3,7 @@
 @import './page-header.scss';
 @import './page-details.scss';
 @import './cards.scss';
+@import './bottom-content.scss';
 @import './footer.scss';
 
 
@@ -24,7 +25,8 @@ body {
 .page-header{
 	padding: 0 $padding-large;
 }
-.page-items{
+.page-items,
+.bottom-content-items{
 	padding: 0 $padding-small;
 	clear: both;
 	font-size: 1.3em;
@@ -59,32 +61,42 @@ body {
 	font-size: 5px;
 	border: solid 1px red;
 }
+.twitter-iframe{
+	@media #{$screen-greater-than-medium} {
+		padding: 0 $padding-large;
+	}
+}
+
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
 @media #{$screen-medium} {
-	.page-items{
-		padding: 0 $padding-large;
+	.page-items,
+	.bottom-content-items{
+		padding: 0 3.5em;
 	}
 }
 @media #{$screen-large} {
 	.page-header,
 	.page-hero,
-	.page-items{
+	.page-items,
+	.bottom-content-items{
 		padding: 0 4em;
 	}
 }
 @media #{$screen-xlarge} {
 	.page-header,
 	.page-hero,
-	.page-items{
+	.page-items,
+	.bottom-content-items{
 		padding: 0 $padding-large;
 	}
 	.navbar, .page-hero{
 			width: 950px;
 			margin: 0 auto;
 	}
-	.page-items{
+	.page-items,
+	.bottom-content-items{
 		padding: 0 $padding-large;
 		width: 950px;
 	}

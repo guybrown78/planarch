@@ -122,69 +122,71 @@
     width: 100%;
     padding: $padding-small;
     margin: 0;
-    .guide-card{
-        background: $white;
-        margin-bottom: $padding-small;
-        &__header{
-            //border: solid 1px red;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            width: 100%;
-            padding: $padding-small;
-            color: $grey-base;
-            text-align: left;
-            font-size: 1.0em;
-            cursor: pointer;
-            transition: .25s;
-            .header-icon{
-                color: $orange-lighter;
-                transition: .25s;
-            }
-            h4{
-                padding-left: 5px;
-                flex-grow: 1;
-            }
-            i{
-                font-size: 1.3em;
-            }
-            .header-control-button{
-                .fa-chevron-circle-up{
-                    display: none;
-                }
-            }
-            &:hover{
-                color: $black;
-                .header-icon{
-                    color: $orange-base;
-                }
-            }
-        }
-        &__content{
-            //border: solid 1px red;
-            padding: $padding-small;
-            display: none;
-        }
-        &.opened{
-            .guide-card__header{
-                color: $black;
-                .header-icon{
-                    color: $orange-base;
-                }
-                .header-control-button{
-                    .fa-chevron-circle-down{
-                        display: none;
-                    }
-                    .fa-chevron-circle-up{
-                        display: inline-block;
-                    }
-                }
-            }
-            .guide-card__content{
-                display: block;
-            }
-        }
-    }
+    
+}
+
+.guide-card{
+	background: $white;
+	margin-bottom: $padding-small;
+	&__header{
+			//border: solid 1px red;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			width: 100%;
+			padding: $padding-small;
+			color: $grey-base;
+			text-align: left;
+			font-size: 1.0em;
+			cursor: pointer;
+			transition: .25s;
+			.header-icon{
+					color: $orange-lighter;
+					transition: .25s;
+			}
+			h4{
+					padding-left: 5px;
+					flex-grow: 1;
+			}
+			i{
+					font-size: 1.3em;
+			}
+			.header-control-button{
+					.fa-chevron-circle-up{
+							display: none;
+					}
+			}
+			&:hover{
+					color: $black;
+					.header-icon{
+							color: $orange-base;
+					}
+			}
+	}
+	&__content{
+			//border: solid 1px red;
+			padding: $padding-small;
+			display: none;
+	}
+	&.opened{
+			.guide-card__header{
+					color: $black;
+					.header-icon{
+							color: $orange-base;
+					}
+					.header-control-button{
+							.fa-chevron-circle-down{
+									display: none;
+							}
+							.fa-chevron-circle-up{
+									display: inline-block;
+							}
+					}
+			}
+			.guide-card__content{
+					display: block;
+			}
+	}
 }
 
 .project-category{

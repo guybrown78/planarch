@@ -1,0 +1,26 @@
+//- about.pug
+extends layout
+
+block content
+	- var currentPath = 'more-tweets';
+	section(class="page-header", id="js-page-header", data-currentpath=`${currentPath}`)
+		include nav
+		div.page-hero#js-pagehero
+			div(class="slider-text-inner text-center")
+				h1 What we say on Social Media
+
+	section.page-items
+		div.page-details
+			ul.page-details-tabs
+				li
+					h2 More Tweets from PlanArch Design
+			div.page-details-content
+				div.twitter-iframe
+					a(class="twitter-timeline" href="https://twitter.com/PlanArchDesign?ref_src=twsrc%5Etfw" data-chrome="nofooter noborders noheader") Tweets by PlanArchDesign
+					script(async src="https://platform.twitter.com/widgets.js" charset="utf-8")
+				div.latest-tweet-footer
+					a(class="guide-card opened" href="./index.html" title="View more tweets from PlanArch Design")
+						div(class="guide-card__header")
+							div(class="header-icon")
+								i(class="fas fa-arrow-circle-left")
+							h4 Back to homepage

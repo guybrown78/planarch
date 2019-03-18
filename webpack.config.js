@@ -109,6 +109,10 @@ module.exports = {
 			template: 'src/contact.pug',
 			filename: 'contact.html',
 		}),
+		new HtmlWebpackPlugin({
+			template: 'src/tweets.pug',
+			filename: 'tweets.html',
+		}),
 		new MiniCssExtractPlugin({
 			filename: "[name].css",
 			chunkFilename: "[id].css"
