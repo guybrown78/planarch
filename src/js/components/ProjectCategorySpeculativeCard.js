@@ -16,15 +16,16 @@ class CardHeader extends React.Component {
 		
 		const { image, category, id, images} = this.props;
 		const base = `./project-imgs/${category}/${id}`;
-		const cachedImages = Array.from(images);
-		cachedImages.forEach(function(img){
+		const cachedImages = new Array();
+		images.forEach(function(img){
 			// caches images, avoiding white flash between background replacements
-			new Image().src = `${base}/${encodeURI(img)}`;
+			cachedImages.push(new Image().src = `${base}/${encodeURI(img)}`);
 		 });
     this.state = {
 			intervalTime: Math.floor(Math.random() * 3000) + 4000,
 			currentImageIndex: 0,
-      currentImage: `url(${base}/${encodeURI(images[0])})`,
+			currentImage: `url(${base}/${encodeURI(images[0])})`,
+			cachedImages: cachedImages,
 		};
 	}
 	
@@ -39,15 +40,16 @@ class CardHeader extends React.Component {
   }
 	timer = () => {
 		const { category, id, images } = this.props;
-		const base = `./project-imgs/${category}/${id}`;
+		//const base = `./project-imgs/${category}/${id}`;
 		if((images.length - 1) > this.state.currentImageIndex){
 			this.setState({currentImageIndex:this.state.currentImageIndex + 1});
 		}else{
 			this.setState({currentImageIndex:0});
 		}
 		//console.log(this.state.currentImage);
-		
-		this.setState({currentImage: `url(${base}/${encodeURI(images[this.state.currentImageIndex])})`});
+
+		//this.setState({currentImage: `url(${base}/${encodeURI(images[this.state.currentImageIndex])})`});
+		this.setState({currentImage: `url(${this.state.cachedImages[this.state.currentImageIndex]})`});
 		//console.log(id, images.length, this.state.currentImageIndex,this.state.currentImage)
 	}
   
