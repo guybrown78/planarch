@@ -55,6 +55,65 @@ body {
 .planarch-map{
 	height:400px;
 }
+.twitter-title{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: $padding-small;
+	color: $grey-base;
+	text-align: left;
+	cursor: pointer;
+	transition: .25s;
+	.header-icon{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		color: $orange-lighter;
+		margin-right: $padding-small;
+		transition: .25s;
+	}
+	i{
+			font-size: 1.3em;
+	}
+	.header-control-button{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin-left: $padding-small;
+		.fa-chevron-circle-up{
+			display: none;
+		}
+	}
+	&:hover{
+			color: $black;
+			.header-icon{
+					color: $orange-base;
+			}
+	}
+	&.opened{
+		color: $black;
+		.header-icon{
+			color: $orange-base;
+		}
+		.header-control-button{
+			.fa-chevron-circle-down{
+				display: none;
+			}
+			.fa-chevron-circle-up{
+				display: inline-block;
+			}
+		}
+	}
+}
+.twitter-iframe-wrapper{
+	display: none;
+	&.opened{
+		display: block;
+	}
+}
 .twitter-wrapper{
 	background-color: $white;
 	padding: 3em;

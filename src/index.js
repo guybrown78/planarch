@@ -8,7 +8,7 @@ import aboutPage from './js/aboutPage';
 import testimonialsPage from './js/testimonialsPage';
 import contactPage from './js/contactPage';
 import guidePage from './js/guidePage';
-//import newsFeed from './js/newsFeed'
+import newsFeed from './js/newsFeed'
 import smoothscroll from 'smoothscroll-polyfill';
 //
 function init() {
@@ -45,7 +45,7 @@ function init() {
 
 	if(currentPath === "index"){
 		// add indexPage scripts
-		//currentPageScript = new newsFeed();
+		currentPageScript = new newsFeed();
 		return;
 	}
 

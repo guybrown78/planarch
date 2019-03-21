@@ -58,9 +58,14 @@ block content
 		div.page-details
 			div.page-details
 			ul.page-details-tabs
-				li
-					h2 Latest tweets from PlanArch Design
-			div.page-details-content
+				li(class="twitter-title", id="js-twitter-title")
+					div(class="header-icon")
+							i(class="fab fa-twitter")
+					h3 Latest tweets from PlanArch Design
+					div(class="header-control-button")
+						i(class="fas fa-chevron-circle-down")
+						i(class="fas fa-chevron-circle-up")
+			div(class="page-details-content twitter-iframe-wrapper", id="js-twitter-timeline")
 				div.twitter-iframe
 					a(class="twitter-timeline" href="https://twitter.com/PlanArchDesign?ref_src=twsrc%5Etfw" data-tweet-limit="3" data-chrome="nofooter noborders noheader") Tweets by PlanArchDesign
 					script(async src="https://platform.twitter.com/widgets.js" charset="utf-8")
